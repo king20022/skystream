@@ -12,6 +12,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="/asset/css/main.css">
     <link rel="stylesheet" href="/asset/css/themes/all-themes.css" />
+    
 </head>
 
 <body class="theme-blush">

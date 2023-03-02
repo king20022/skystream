@@ -105,10 +105,23 @@ Route::middleware('auth')->group(function () {
     //  admin ends here
 
 
-    // investor negins here
+    // investor begins here
 
     // investor dashboard
     Route::get('/investor', [InvestorController::class, 'show'])->name('investor.show');
+
+
+    // deposit
+    Route::get('/investor/deposit', [InvestorController::class, 'reveal'])->name('investor.reveal');
+
+    // show wallet address
+    Route::get('/investor/wallet', [InvestorController::class, 'coin'])->name('investor.coin');
+
+
+
+
+
+
 });
 
 require __DIR__ . '/auth.php';
