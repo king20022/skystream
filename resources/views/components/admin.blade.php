@@ -27,12 +27,10 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="admin-image"> <img src="assets/images/random-avatar7.jpg" alt=""> </div>
-                <div class="admin-action-info"> <span>Welcome Admin</span>
+                <div class="admin-action-info">
                     <h3>{{ Auth::user()->name }}</h3>
                     <ul>
 
-                        <li><a data-placement="bottom" title="Full Screen" href="{{ route('logout') }}"><i
-                                    class="zmdi zmdi-sign-in"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +38,7 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+
                     <li class="active open"><a href="{{ route('admin.dashboard') }}"><i
                                 class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
                     <li>
@@ -58,6 +56,11 @@
                                 class="zmdi zmdi-account-add"></i><span>Add-Investment</span> </a>
 
                     </li>
+
+                    <li><a href="{{ route ('logout')}}"><i
+                        class="zmdi zmdi-city-alt"></i><span>Logout</span> </a>
+
+            </li>
 
                 </ul>
             </div>
@@ -234,7 +237,7 @@
     <!--Side menu and right menu -->
     {{ $slot }}
 
-    <div class="color-bg"></div>
+    {{-- <div class="color-bg"></div> --}}
 
     <!-- Jquery Core Js -->
     <script src="asset/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->

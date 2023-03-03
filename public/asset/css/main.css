@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -109,24 +110,24 @@ h6,
 
 .btn:not(.btn-raised),
 .input-group-btn .btn:not(.btn-raised) {
-    box-shadow: none
+    box-shadow: none;
 }
 
 .btn:not(.btn-raised),
 .btn:not(.btn-raised).btn-default,
 .input-group-btn .btn:not(.btn-raised),
 .input-group-btn .btn:not(.btn-raised).btn-default {
-    color: rgba(0, 0, 0, 0.87)
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .btn:not(.btn-raised).btn-inverse,
 .input-group-btn .btn:not(.btn-raised).btn-inverse {
-    color: #3f51b5
+    color: #3f51b5;
 }
 
 .btn:not(.btn-raised).btn-primary,
 .input-group-btn .btn:not(.btn-raised).btn-primary {
-    color: #9c27b0
+    color: #9c27b0;
 }
 
 .btn:not(.btn-raised).btn-success,
@@ -153,7 +154,7 @@ h6,
 .btn:not(.btn-raised):not(.btn-link):focus,
 .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover,
 .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
-    background-color: transparent
+    background-color: transparent;
 }
 
 .btn:focus,
@@ -162,7 +163,7 @@ h6,
 .input-group-btn .btn:focus,
 .input-group-btn .btn:active,
 .input-group-btn .btn:active:focus {
-    outline: 0
+    outline: 0;
 }
 
 .btn.btn-raised,
@@ -14181,7 +14182,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     z-index: 12;
     width: 100%;
     padding: 15px;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .navbar .navbar-brand {
@@ -14560,7 +14561,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
 .sidebar .menu {
     position: relative;
     overflow-y: auto;
-    background: #30373e
+    background: #fdfcfc;
 }
 
 .sidebar .menu .list {
@@ -14573,14 +14574,14 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
 }
 
 .sidebar .menu .list .header {
-    background: #363e46;
+    background:transparent;
     font-size: 12px;
     padding: 8px 16px;
-    color: #ccc
+    color: #000000
 }
 
 .sidebar .menu .list i.material-icons {
-    margin-top: 4px
+    margin-top: 4px;
 }
 
 .sidebar .menu .list .menu-toggle:after,
@@ -14598,7 +14599,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    color: #888
+    color: #888;
 }
 
 .sidebar .menu .list .menu-toggle:before {
@@ -14607,7 +14608,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
-    transform: scale(1)
+    transform: scale(1);
 }
 
 .sidebar .menu .list .menu-toggle:after {
@@ -14616,7 +14617,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -ms-transform: scale(0);
     -o-transform: scale(0);
     -webkit-transform: scale(0);
-    transform: scale(0)
+    transform: scale(0);
 }
 
 .sidebar .menu .list .menu-toggle.toggled:before {
@@ -14624,7 +14625,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -ms-transform: scale(0);
     -o-transform: scale(0);
     -webkit-transform: scale(0);
-    transform: scale(0)
+    transform: scale(0);
 }
 
 .sidebar .menu .list .menu-toggle.toggled:after {
@@ -14632,18 +14633,18 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     -webkit-transform: scale(1);
-    transform: scale(1)
+    transform: scale(1);
 }
 
 .sidebar .menu .list a {
-    color: #999;
+    color: #211ecb;
     position: relative;
     display: inline-flex;
     vertical-align: middle;
     width: 100%;
-    padding: 13px;
-    font-weight: 400;
-    font-size: 15px
+    padding: 14px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .sidebar .menu .list a:hover,
@@ -17162,7 +17163,7 @@ a {
     -moz-animation: none !important;
     -o-animation: none !important;
     -ms-animation: none !important;
-    animation: none !important
+    animation: none !important;
 }
 
 section.content {
@@ -17179,7 +17180,7 @@ section.content {
     position: relative;
     background: #f0f3f5;
     box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.09);
-    padding: 30px 15px
+    padding: 30px 15px;
 }
 
 .g-bg-cyan {

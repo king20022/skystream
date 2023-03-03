@@ -129,7 +129,7 @@
                     <div class="col-sm-3">
                         <br>
                         <br>
-                        <a href="certificate.jpg" target="_blank" class="button w-button"
+                        <a href="/public/img/certificate.jpg" target="_blank" class="button w-button"
                             style="background-color:#fcb42d">View Certificate of
                             Incoporation</a>
                     </div>
@@ -371,6 +371,434 @@
             }
         </script>
     </div>
+    {{--  --}}
+    <script>
+        AOS.init({
+            duration: 800,
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var lang = $("html").attr("lang");
+
+            if ($("#homeFeed").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/home-live-updates.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            var result = $.parseJSON(result);
+                            $("#Forex").html(result.forex);
+                            $("#Indices").html(result.indices);
+                            $("#Metals").html(result.metal);
+                            $("#Commodities").html(result.commo);
+                            $("#Crypto").html(result.crypto);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#btmTbl1").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.Astrostockfx/inc/forex-table-btm-1.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#btmTbl1").html(result);
+                        },
+                    });
+                }, 500);
+            }
+            if ($("#btmTbl2").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/forex-table-btm-2.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#btmTbl2").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#btmTbl3").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/forex-table-btm-3.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#btmTbl3").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#forexCard").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/forex-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#forexCard").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#metalSingle").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/metal-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#metalSingle").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#energyCard").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/energy-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#energyCard").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#cyptoCard").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/crypto-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#cyptoCard").html(result);
+                        },
+                    });
+                }, 500);
+            }
+            if ($("#cryptoTable").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/crypto-table.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#cryptoTable").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#commoCard").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/commo-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#commoCard").html(result);
+                        },
+                    });
+                }, 500);
+            }
+            if ($("#indicesCard").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/indices-card.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#indicesCard").html(result);
+                        },
+                    });
+                }, 500);
+            }
+
+            if ($("#indicesTable").length > 0) {
+                setInterval(function() {
+                    $.ajax({
+                        type: "POST",
+                        url: "../www.tmgm.com/inc/indices-table.php",
+                        data: {
+                            lang: lang
+                        },
+                        success: function(result) {
+                            $("#indicesTable").html(result);
+                        },
+                    });
+                }, 500);
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "a384f35e-ad1c-42f5-afdb-3cc7d34dd1db";
+        (function() {
+            d = document;
+            s = d.createElement("script");
+            s.src = "../client.crisp.chat/l.html";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+
+    <div class="mgm" style="display: none">
+        <div class="txt" style="color: black">
+            Someone from <b></b> just traded with
+            <a href="javascript:void(0);" onclick="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <style>
+        .mgm {
+            border-radius: 7px;
+            position: fixed;
+            z-index: 90;
+            bottom: 80px;
+            right: 50px;
+            background: #fff;
+            padding: 10px 27px;
+            box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .mgm a {
+            font-weight: 700;
+            display: block;
+            color: #f2d516;
+        }
+
+        .mgm a,
+        .mgm a:active {
+            transition: all 0.2s ease;
+            color: #f2d516;
+        }
+    </style>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+    <script type="text/javascript">
+        var listCountries = [
+            "Brazil",
+            "USA",
+            "Germany",
+            "France",
+            "Italy",
+            "United Kingdom",
+            "Australia",
+            "Iraq",
+            "Canada",
+            "Argentina",
+            "Saudi Arabia",
+            "Mexico",
+            "USA",
+            "South Africa",
+            "Venezuela",
+            "United Kingdom",
+            "Sweden",
+            "Brazil",
+            "Germany",
+            "Italy",
+            "South Africa",
+            "United Kingdom",
+            "South Africa",
+            "Greece",
+            "Cuba",
+            "South Africa",
+            "Portugal",
+            "Austria",
+            "Brazil",
+            "Panama",
+            "Dubai",
+            "USA",
+            "Netherlands",
+            "Switzerland",
+            "Belgium",
+            "Israel",
+            "Cyprus",
+        ];
+        var listPlans = [
+            "$500",
+            "$1500",
+            "$1000",
+            "$10,000",
+            "$2000",
+            "$3000",
+            "$4000",
+            "$600",
+            "$700",
+            "$2500",
+        ];
+        interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+        var run = setInterval(request, interval);
+
+        function request() {
+            clearInterval(run);
+            interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+            var country =
+                listCountries[Math.floor(Math.random() * listCountries.length)];
+            var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+            var msg =
+                "Someone from <b>" +
+                country +
+                '</b> just traded with <a href="javascript:void(0);" onclick="javascript:void(0);">' +
+                plan +
+                " .</a>";
+            $(".mgm .txt").html(msg);
+            $(".mgm").stop(true).fadeIn(300);
+            window.setTimeout(function() {
+                $(".mgm").stop(true).fadeOut(300);
+            }, 6000);
+            run = setInterval(request, interval);
+        }
+    </script>
+
+    <div class="mgm" style="display: none">
+        <div class="txt" style="color: #d4af37">
+            Someone from <b></b> just made a withdrawal of
+            <a href="javascript:void(0);" onclick="javascript:void(0);"></a>
+        </div>
+    </div>
+
+    <style>
+        .mgm {
+            border-radius: 7px;
+            position: fixed;
+            z-index: 150;
+            bottom: 80px;
+            right: 50px;
+            background: black;
+            padding: 10px 27px;
+            box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ffc400;
+        }
+
+        .mgm a {
+            font-weight: 700;
+            display: block;
+            color: #d4af37;
+            /*#f2d516;*/
+        }
+
+        .mgm a,
+        .mgm a:active {
+            transition: all 0.2s ease;
+            color: #d4af37;
+            /*#f2d516;*/
+        }
+    </style>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min-2.html"></script>
+    <script type="text/javascript">
+        var listCountries = [
+            "South Africa",
+            "USA",
+            "Germany",
+            "France",
+            "Italy",
+            "United Kingdom",
+            "Australia",
+            "Iraq",
+            "Canada",
+            "Argentina",
+            "Saudi Arabia",
+            "Mexico",
+            "USA",
+            "South Africa",
+            "Venezuela",
+            "United Kingdom",
+            "Sweden",
+            "Brazil",
+            "Germany",
+            "Italy",
+            "South Africa",
+            "United Kingdom",
+            "South Africa",
+            "Greece",
+            "Cuba",
+            "South Africa",
+            "Portugal",
+            "Austria",
+            "Brazil",
+            "Panama",
+            "South Africa",
+            "South Africa",
+            "Netherlands",
+            "Switzerland",
+            "Belgium",
+            "Israel",
+            "Cyprus",
+        ];
+        var listPlans = [
+            "$7,835",
+            "$3,231",
+            "$2,500",
+            "$1,500",
+            "$10,000",
+            "$20,000",
+            "$3,000",
+            "$4,000",
+            "$7,650",
+            "$8,427",
+            "$6,962",
+            "$5,704",
+            "$27,340",
+            "$41,530",
+        ];
+        interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+        var run = setInterval(request, 9000);
+
+        function request() {
+            clearInterval(run);
+            interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+            var country =
+                listCountries[Math.floor(Math.random() * listCountries.length)];
+            var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+            var msg =
+                "Someone from <b>" +
+                country +
+                '</b> just made a withdrawal of <a href="javascript:void(0);" onclick="javascript:void(0);">' +
+                plan +
+                " </a>";
+            $(".mgm .txt").html(msg);
+            $(".mgm").stop(true).fadeIn(300);
+            window.setTimeout(function() {
+                $(".mgm").stop(true).fadeOut(300);
+            }, 6000);
+            run = setInterval(request, 60000);
+        }
+    </script>
+
 
     <script src="public/js/jquery-3.5.1.min.dc5e7f18c8bf79.js" type="text/javascript"></script>
     <script src="public/js/webflow.069902445.js" type="text/javascript"></script>

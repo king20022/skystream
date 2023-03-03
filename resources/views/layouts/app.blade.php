@@ -12,7 +12,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="/asset/css/main.css">
     <link rel="stylesheet" href="/asset/css/themes/all-themes.css" />
-    
+
 </head>
 
 <body class="theme-blush">
@@ -124,7 +124,7 @@
     <!-- Top Bar -->
     <nav class="navbar clearHeader">
         <div class="col-12">
-            <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand"
+            <div class="navbar-header mt-5"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand"
                     href="#">Exquisitecryptoventures</a> </div>
             <ul class="nav navbar-nav navbar-right">
                 {{-- <!-- Notifications -->
@@ -276,7 +276,7 @@
         </x-investor>
     @endif
 
-    <div class="color-bg"></div>
+    {{-- <div class="color-bg"></div> --}}
 
     <!-- Jquery Core Js -->
     <script src="asset/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->

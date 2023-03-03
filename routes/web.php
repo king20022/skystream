@@ -117,6 +117,22 @@ Route::middleware('auth')->group(function () {
     // show wallet address
     Route::get('/investor/wallet', [InvestorController::class, 'coin'])->name('investor.coin');
 
+    // update your profile
+    Route::get('/investor/profile', [InvestorController::class, 'profile'])->name('investor.update');
+
+    // storeinvestoinfo
+    Route::put('/investor/update',  [InvestorController::class, 'profileupdate'])->name('investor.updated');
+
+    // withdraw
+    Route::get('/investor/withdraw', [InvestorController::class, 'withdraw'])->name('investor.with');
+
+
+
+
+
+
+
+
 
 
 

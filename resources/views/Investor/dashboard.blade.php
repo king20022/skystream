@@ -59,7 +59,7 @@
                                 <span class="text-small"><b>Available balance</b></span>
 
 
-                                <h3 class="font-weight-bold h3 pr-5"><i class="dollar">$ </i>{{ $user->balance }} </h3>
+                                <h3 class="font-weight-bold h3 pr-5"><i class="dollar h-2">$ </i>{{ $user->balance }} </h3>
 
 
 
@@ -75,11 +75,11 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card">
 
-                            <div class="body">
-                                <p class="text-muted mb-1">Profit</p>
+                            <div class="body ">
+                                <p class=" text-pink mb-1 h-6 text-body"><b>Profit</b></p>
 
-                                <h3>{{ $user->profit }}</h3>
-                                <i class="dollar">$</i>
+                                <h3 class=" ">{{ $user->profit }}</h3>
+                                <i class=" h5 mt-0"><b>$</b></i>
 
 
                             </div>
@@ -88,10 +88,10 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card">
                             <div class="body">
-                                <p class="text-muted">Balance</p>
+                                <p class="mb-1 text-body"><b>Balance</b></p>
 
                                 <h3>{{ $user->balance }}</h3>
-                                <i class="dollar">$</i>
+                                <i class=" h5"><b>$</b></i>
 
 
                             </div>
@@ -100,10 +100,10 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="card">
                             <div class="body">
-                                <p class="text-muted">Bonus</p>
+                                <p class="mb-1 text-body"><b>Bonus</b></p>
 
                                 <h3>{{ $user->bonus }}</h3>
-                                <i class="dollar">$</i>
+                                <i class="h5"><b>$</b></i>
 
 
                             </div>

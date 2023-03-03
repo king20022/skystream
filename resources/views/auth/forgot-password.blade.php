@@ -84,10 +84,14 @@
                                     <!-- logo end -->
                                     <p class="uk-text-lead uk-margin-small-top uk-margin-medium-bottom">
                                     </p>
+                                    @foreach ($errors->all() as $err)
+                                        <label for="edit page"></label>
+                                        <p class="text-danger text-center">{{ $err }}</p>
+                                    @endforeach
 
                                     <!-- login form begin -->
-                                    <form class="uk-grid uk-form" method="POST"
-                                        action="{{ route('password.email') }}">@csrf
+                                    <form class="uk-grid uk-form" method="POST" action="{{ route('password.email') }}">
+                                        @csrf
 
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
                                             <span class="uk-form-icon uk-form-icon-flip fas fa-envelope fa-sm"></span>
@@ -101,16 +105,15 @@
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">
                                             <button
-                                                class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left"
-                                                >Send Password Reset Link</button>
+                                                class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left">Send
+                                                Password Reset Link</button>
                                         </div>
                                     </form>
                                     <!-- login form end -->
                                     <p style="display: none;" class="uk-heading-line"><span>Or login with</span></p>
                                     <div style="display: none;" class="uk-margin-medium-bottom">
                                         <a class="uk-button uk-button-small uk-border-rounded in-brand-google"
-                                            href="#"><i
-                                                class="fab fa-google uk-margin-small-right"></i>Google</a>
+                                            href="#"><i class="fab fa-google uk-margin-small-right"></i>Google</a>
                                         <a class="uk-button uk-button-small uk-border-rounded in-brand-facebook"
                                             href="#"><i
                                                 class="fab fa-facebook-f uk-margin-small-right"></i>Facebook</a>

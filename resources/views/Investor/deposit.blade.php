@@ -21,8 +21,8 @@
                             <div class="body">
                                 <div class="member-card verified text-left ">
 
-                                    <p class="text-pink mb-0">Available Balance</p>
-                                    <p class="text-pink mb-0"><i>$ </i>{{ $user->balance }}</p>
+                                    <p class="text-pink mb-0"><b class="h6">Available Balance</b></p>
+                                    <p class="text-pink mt-3"><i class="h5">$ </i><span class="h5">{{ $user->balance }}</span></p>
                                     <p class="text-muted"> <b> </b></p>
 
 

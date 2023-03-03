@@ -7,7 +7,7 @@
                 <div class="d-sm-flex justify-content-between">
                     <div>
                         <h2>Dashboard</h2>
-                        <small class="text-muted">Welcome to Admin </small>
+                        <small class="text-muted">Welcome  Admin </small>
                     </div>
 
                 </div>

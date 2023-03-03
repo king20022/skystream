@@ -51,13 +51,13 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+
                     <li class="active open"><a href="{{ route ('investor.show')}}"><i
                                 class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
-                    {{-- <li><a href="#"><i
+                    <li><a href="{{ route ('investor.update')}}"><i
                                 class="zmdi zmdi-account"></i><span>My Profile</span> </a>
 
-                    </li> --}}
+                    </li>
                     <li><a href=""><i
                                 class="zmdi zmdi-accounts-outline"></i><span>Investment</span> </a>
 
@@ -66,8 +66,8 @@
                                 class="zmdi zmdi-book"></i><span>Deposit</span> </a>
 
                     </li>
-                    <li><a href=""><i
-                                class="zmdi zmdi-book"></i><span>Withdrawals</span> </a>
+                    <li><a href="{{ route('investor.with')}}"><i
+                                class="zmdi zmdi-book"></i><span>Withdrawal</span> </a>
                     </li>
                     <li><a href="{{ route ('logout')}}"><i
                                 class="zmdi zmdi-city-alt"></i><span>Logout</span> </a>
@@ -83,7 +83,7 @@
     </section>
     <!--Side menu and right menu -->
     {{ $slot }}
-    <div class="color-bg"></div>
+    {{-- <div class="color-bg"></div> --}}
 
     <!-- Jquery Core Js -->
     <script src="asset/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
