@@ -82,7 +82,7 @@ Route::get('/oilgas', [HomeController::class, 'even'])->name('oilgas');
 
 Route::get('/dashboard', function () {
 
-    return view('admin.dashboard');
+    // return view('admin.dashboard');
 
 
     // if (Auth::user()->role == 'investor') {
@@ -90,11 +90,11 @@ Route::get('/dashboard', function () {
     // } else if (Auth::user()->role == 'admin') {
     //     return back('admin.dashboard');
     // }
-    // if (Auth::user()->role == 'investor') {
-    //     return redirect()->route('investor.show');
-    // } else if (Auth::user()->role == 'admin') {
-    //     return view('admin.dashboard');
-    // }
+    if (Auth::user()->role == 'investor') {
+        return redirect()->route('investor.show');
+    } else if (Auth::user()->role == 'admin') {
+        return view('admin.dashboard');
+    }
 })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 
