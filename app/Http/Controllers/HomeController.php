@@ -26,10 +26,23 @@ class HomeController extends Controller
         return view ('insights');
     }
 
-    public function showthree()
+    public function three()
     {
-       
-        return view ('admin.dashboard');
+
+        return view ('alternative');
+    }
+
+
+    public function four()
+    {
+
+        return view ('real-asset');
+    }
+
+    public function five()
+    {
+
+        return view ('realestate');
     }
 
 

@@ -279,16 +279,16 @@
     {{-- <div class="color-bg"></div> --}}
 
     <!-- Jquery Core Js -->
-    <script src="asset/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-    <script src="asset/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-    <script src="asset/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
+    <script src="/asset/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="/asset/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+    <script src="/asset/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search -->
 
-    <script src="asset/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
-    <script src="asset/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js -->
+    <script src="/asset/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> <!-- Sparkline Plugin Js -->
+    <script src="/asset/plugins/chartjs/Chart.bundle.min.js"></script> <!-- Chart Plugins Js -->
 
-    <script src="asset/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
-    <script src="asset/js/pages/charts/sparkline.min.js"></script>
-    <script src="asset/js/pages/index.js"></script>
+    <script src="/asset/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+    <script src="/asset/js/pages/charts/sparkline.min.js"></script>
+    <script src="/asset/js/pages/index.js"></script>
 </body>
 
 

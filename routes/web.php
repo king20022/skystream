@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 // to return the homepage
 Route::get('/', [HomeController::class, 'create'])->name('welcome');
 
@@ -29,11 +30,19 @@ Route::get('/responsibility', [HomeController::class, 'showOne'])->name('respons
 // to return insights page
 Route::get('/insights', [HomeController::class, 'showTwo'])->name('insights');
 
+Route::get('/alternative', [HomeController::class, 'three'])->name('alternative');
+
+Route::get('/real-asset', [HomeController::class, 'four'])->name('realasset');
+
+Route::get('/realestate', [HomeController::class, 'five'])->name('realestate');
+
+
+
 
 
 Route::get('/dashboard', function () {
 
-    // return view('admin.dashboard');
+    return view('admin.dashboard');
 
 
     // if (Auth::user()->role == 'investor') {
@@ -41,11 +50,11 @@ Route::get('/dashboard', function () {
     // } else if (Auth::user()->role == 'admin') {
     //     return back('admin.dashboard');
     // }
-    if (Auth::user()->role == 'investor') {
-        return redirect()->route('investor.show');
-    } else if (Auth::user()->role == 'admin') {
-        return view('admin.dashboard');
-    }
+    // if (Auth::user()->role == 'investor') {
+    //     return redirect()->route('investor.show');
+    // } else if (Auth::user()->role == 'admin') {
+    //     return view('admin.dashboard');
+    // }
 })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 

@@ -27,7 +27,7 @@
                                     and
                                     embrace <br /> innovation to help our clients navigate the uncertainty of capital
                                     markets</p>
-                            </div><a href="register.html" data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544331a"
+                            </div><a href="{{route ('register')}}" data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544331a"
                                 style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
                                 class="button w-button btnhov">GET STARTED</a>
                         </div>
@@ -49,7 +49,7 @@
                                     to our
                                     consistent
                                     investment <br />philosophy and disciplined research process</p>
-                            </div><a href="register.html" class="button w-button btnhov">GET STARTED</a>
+                            </div><a href="{{route ('register')}}" class="button w-button btnhov">GET STARTED</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                                     our <br />
                                     Investment
                                     Performance Highlights.</p>
-                            </div><a href="register.html" class="button w-button btnhov">GET STARTED</a>
+                            </div><a href="{{route ('register')}}" class="button w-button btnhov">GET STARTED</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                                             assets, you
                                             will discover...</p>
                                     </div>
-                                    <div class="top-border"><a href="alternatives.html#institutional"
+                                    <div class="top-border"><a href="{{ route ('alternative')}}"
                                             class="button w-button" style="background-color:#fcb42d">learn
                                             more</a></div>
                                 </div>
@@ -226,7 +226,7 @@
                                             to
                                             their private markets...</p>
                                     </div>
-                                    <div class="top-border"><a href="real-asset.html" class="button w-button"
+                                    <div class="top-border"><a href="{{ route ('realasset')}}" class="button w-button"
                                             style="background-color:#fcb42d">learn more</a>
                                     </div>
                                 </div>
@@ -247,7 +247,7 @@
                                             long
                                             track record of managing...</p>
                                     </div>
-                                    <div class="top-border"><a href="alternatives.html" class="button w-button"
+                                    <div class="top-border"><a href="{{ route ('alternative')}}" class="button w-button"
                                             style="background-color:#fcb42d">learn more</a>
                                     </div>
                                 </div>
@@ -826,20 +826,20 @@
 
             </div>
 
-            <div class="container mysliderbox" style="margin-bottom: 0px !important">
-                <h2>Our Partners</h2>
+            <div class="container mysliderbox" style="margin-bottom: 5px !important">
+                <h2 class="text-center ">Our Partners</h2>
                 <section class="customer-logos slider carousel-wrapper">
-                    <div class="slide"><img src="public/jpegs/binance.png"></div>
-                    <div class="slide"><img src="public/jpegs/coinbase.jpg"></div>
-                    <div class="slide"><img src="public/jpegs/gemini.jpg"></div>
-                    <div class="slide"><img src="public/jpegs/robinhood.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/binance.png"></div>
+                    <div class="slide"><img src="/public/jpegs/coinbase.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/gemini.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/robinhood.jpg"></div>
                     <div class="slide"><img src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg">
                     </div>
-                    <div class="slide"><img src="public/jpegs/binance.png"></div>
+                    <div class="slide"><img src="/public/jpegs/binance.png"></div>
 
-                    <div class="slide"><img src="public/jpegs/blockchain.jpg"></div>
-                    <div class="slide"><img src="public/jpegs/ameritrade.jpg"></div>
-                    <div class="slide"><img src="public/jpegs/gemini.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/blockchain.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/ameritrade.jpg"></div>
+                    <div class="slide"><img src="/public/jpegs/gemini.jpg"></div>
 
                 </section>
             </div>

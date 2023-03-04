@@ -127,11 +127,6 @@
                         </p>
                     </div>
                     <div class="col-sm-3">
-                        <br>
-                        <br>
-                        <a href="/public/img/certificate.jpg" target="_blank" class="button w-button"
-                            style="background-color:#fcb42d">View Certificate of
-                            Incoporation</a>
                     </div>
                 </div>
 
@@ -165,7 +160,7 @@
                         <h4 class="title" style="color:white">Contact Us</h4>
                         <ul style="color:white">
                             <!--<li>+1 (803) 398-3209</li>-->
-                            <li>support@Exquisitecryptoventures.com</li>
+                            <li>support@exquisitecryptoventures.com</li>
                             <!--<li></li>-->
                         </ul>
                     </div>
@@ -372,7 +367,7 @@
         </script>
     </div>
     {{--  --}}
-    <script>
+    {{-- <script>
         AOS.init({
             duration: 800,
         });
@@ -563,8 +558,8 @@
                 }, 500);
             }
         });
-    </script>
-    <script type="text/javascript">
+    </script> --}}
+    {{-- <script type="text/javascript">
         window.$crisp = [];
         window.CRISP_WEBSITE_ID = "a384f35e-ad1c-42f5-afdb-3cc7d34dd1db";
         (function() {
@@ -574,9 +569,9 @@
             s.async = 1;
             d.getElementsByTagName("head")[0].appendChild(s);
         })();
-    </script>
+    </script> --}}
 
-    <div class="mgm" style="display: none">
+    <div class="mgm " style="display: none">
         <div class="txt" style="color: black">
             Someone from <b></b> just traded with
             <a href="javascript:void(0);" onclick="javascript:void(0);"></a>
@@ -676,7 +671,7 @@
                 plan +
                 " .</a>";
             $(".mgm .txt").html(msg);
-            $(".mgm").stop(true).fadeIn(300);
+            $(".mgm").stop(true).fadeIn(100);
             window.setTimeout(function() {
                 $(".mgm").stop(true).fadeOut(300);
             }, 6000);
@@ -791,10 +786,10 @@
                 plan +
                 " </a>";
             $(".mgm .txt").html(msg);
-            $(".mgm").stop(true).fadeIn(300);
+            $(".mgm").stop(true).fadeIn(100);
             window.setTimeout(function() {
                 $(".mgm").stop(true).fadeOut(300);
-            }, 6000);
+            }, 7000);
             run = setInterval(request, 60000);
         }
     </script>
@@ -809,6 +804,7 @@
     <script src="../code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
     <script>
         var current = 1,
@@ -853,6 +849,7 @@
             }
         }
     </script>
+    <script src="//code.tidio.co/tiluinnscanb7ysbuzivfry0pwsg4owq.js" async></script>
 
 
 </body>
