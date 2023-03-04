@@ -82,26 +82,26 @@
                             <li><a href="{{ route('realestate') }}">Real Estate</a></li>
                             <li><a href="{{ route('stocks') }}">Stocks</a></li>
                             <li><a href="{{ route('structure') }}">Infrastructure</a></li>
-                            <li><a href="forex.html">Forex trading</a></li>
-                            <li><a href="crypto.html">Crypto asset</a></li>
-                            <li><a href="fixed-income.html">Fixed income</a></li>
-                            <li><a href="multi-asset.html">Multi Assets</a></li>
-                            <li><a href="renewable-power.html">Renewable Power</a></li>
-                            <li><a href="agriculture.html">Agriculture</a></li>
-                            <li><a href="nfp.html">NFP</a></li>
+                            <li><a href="{{ route('forex') }}">Forex trading</a></li>
+                            <li><a href="{{ route('crypto') }}">Crypto asset</a></li>
+                            <li><a href="{{ route('fixed') }}">Fixed income</a></li>
+                            <li><a href="{{ route('multi') }}">Multi Assets</a></li>
+                            <li><a href="{{ route('power') }}">Renewable Power</a></li>
+                            <li><a href="{{ route('culture') }}">Agriculture</a></li>
+                            <li><a href="{{ route('nfp') }}">NFP</a></li>
                         </ul>
                     </li>
                     <li class="dropdown navmenu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-haspopup="true" aria-expanded="false">Planning Services<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-lists">
-                            <li><a href="financial-planning.html">Financial Planning</a></li>
-                            <li><a href="retirement-planning.html">Retirement Planning</a></li>
-                            <li><a href="private-wealth.html">Private Wealth Management</a></li>
-                            <li><a href="estate-planning.html">Estate Planning</a></li>
-                            <li><a href="long-term.html">Long Term Care</a></li>
-                            <li><a href="business-service.html">Business Services</a></li>
-                            <li><a href="oil-and-gas.html">Oil & Gas</a></li>
+                            <li><a href="{{ route('financial') }}">Financial Planning</a></li>
+                            <li><a href="{{ route('retirement') }}">Retirement Planning</a></li>
+                            <li><a href="{{ route('private') }}">Private Wealth Management</a></li>
+                            <li><a href="{{ route('estate') }}">Estate Planning</a></li>
+                            <li><a href="{{ route('longterm') }}">Long Term Care</a></li>
+                            <li><a href="{{ route('business') }}">Business Services</a></li>
+                            <li><a href="{{ route('oilgas') }}">Oil & Gas</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ route('insights') }}" class="navmenu">Insights</a></li>
@@ -139,9 +139,9 @@
                                 <ul style="color:white">
                                     <li><a href="{{ route('about') }}">About Us</a></li>
                                     <li><a href="{{ route('responsibility') }}">Corporate responsibility</a> </li>
-                                    <li><a href="financial-planning.html">Planning services</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="{{ route('financial') }}">Planning services</a></li>
+                                    {{-- <li><a href="contact.html">Contact Us</a></li> --}}
+                                    {{-- <li><a href="faq.html">FAQs</a></li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -149,11 +149,11 @@
                     <div class="col-md-4">
                         <h4 class="title" style="color:white">Main Services</h4>
                         <ul style="color:white">
-                            <li><a href="crypto.html">Cryptocurrency</a></li>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="stocks.html">Stock</a></li>
-                            <li><a href="fixed-income.html">Fixed Income</a></li>
-                            <li><a href="multi-asset.html">Multi Assets</a></li>
+                            <li><a href="{{ route('crypto') }}">Cryptocurrency</a></li>
+                            <li><a href="{{ route('realestate') }}">Real Estate</a></li>
+                            <li><a href="{{ route('stocks') }}">Stock</a></li>
+                            <li><a href="{{ route('fixed') }}">Fixed Income</a></li>
+                            <li><a href="{{ route('multi') }}">Multi Assets</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
