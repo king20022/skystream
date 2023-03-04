@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Investment;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -42,7 +43,19 @@ class HomeController extends Controller
     public function five()
     {
 
-        return view ('realestate');
+        return view ('investment.realestate');
+    }
+
+    public function six()
+    {
+
+        return view ('investment.stocks');
+    }
+
+    public function seven()
+    {
+
+        return view ('investment.infrastructure');
     }
 
 

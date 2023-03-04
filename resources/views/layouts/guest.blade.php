@@ -79,9 +79,9 @@
                             aria-haspopup="true" aria-expanded="false">Investment Products<span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-lists">
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="stocks.html">Stocks</a></li>
-                            <li><a href="infrastructure.html">Infrastructure</a></li>
+                            <li><a href="{{ route('realestate') }}">Real Estate</a></li>
+                            <li><a href="{{ route('stocks') }}">Stocks</a></li>
+                            <li><a href="{{ route('structure') }}">Infrastructure</a></li>
                             <li><a href="forex.html">Forex trading</a></li>
                             <li><a href="crypto.html">Crypto asset</a></li>
                             <li><a href="fixed-income.html">Fixed income</a></li>

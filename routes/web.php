@@ -36,13 +36,17 @@ Route::get('/real-asset', [HomeController::class, 'four'])->name('realasset');
 
 Route::get('/realestate', [HomeController::class, 'five'])->name('realestate');
 
+Route::get('/stocks', [HomeController::class, 'six'])->name('stocks');
+
+Route::get('/structure', [HomeController::class, 'seven'])->name('structure');
+
 
 
 
 
 Route::get('/dashboard', function () {
 
-    return view('admin.dashboard');
+    return view('dashboard');
 
 
     // if (Auth::user()->role == 'investor') {
