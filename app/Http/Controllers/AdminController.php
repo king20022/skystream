@@ -15,13 +15,13 @@ class AdminController extends Controller
 
     {
         $payment = Payment::all();
-        return view('Admin.addcoin', compact('payment'));
+        return view('admin.addcoin', compact('payment'));
     }
 
     public function addd()
     {
         $investment = Investment::all();
-        return view('Admin.addinvestment', compact('investment'));
+        return view('admin.addinvestment', compact('investment'));
     }
 
 
@@ -30,7 +30,7 @@ class AdminController extends Controller
     public function show()
     {
         $user = User::orderby('id', 'desc')->get();
-        return view('Admin.investors', compact('user'));
+        return view('admin.investors', compact('user'));
     }
 
 
@@ -39,7 +39,7 @@ class AdminController extends Controller
     {
 
         $user = User::findOrFail($id);
-        return view('Admin.profile', compact('user'));
+        return view('admin.profile', compact('user'));
     }
 
 
@@ -89,7 +89,7 @@ class AdminController extends Controller
     public function coin()
     {
 
-        return view('Admin.coinform');
+        return view('admin.coinform');
     }
 
 
@@ -128,7 +128,7 @@ class AdminController extends Controller
 
     public function investment()
     {
-        return view('Admin.investmentform');
+        return view('admin.investmentform');
     }
 
 

@@ -90,20 +90,14 @@ Route::get('/admindashboard', function () {
     // } else if (Auth::user()->role == 'admin') {
     //     return back('admin.dashboard');
     // }
-    // if (Auth::user()->role == 'investor') {
-    //     return redirect()->route('investor.show');
-    // } else if (Auth::user()->role == 'admin') {
-    //     return view('admin.dashboard');
-    // }
+    if (Auth::user()->role == 'investor') {
+        return redirect()->route('investor.show');
+    } else if (Auth::user()->role == 'admin') {
+        return view('admin.dashboard');
+    }
     return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
-
-// Route::middleware('auth', 'verified')->group(function () {
-//     Route::get('/dashboard', [HomeController::class, 'showthree'])->name('admin.dashboard');
-
-//     Route::get('/investor', [InvestorController::class, 'show'])->name('investor.show');
-// });
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
