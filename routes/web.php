@@ -80,9 +80,9 @@ Route::get('/oilgas', [HomeController::class, 'even'])->name('oilgas');
 
 
 
-Route::get('/dashboard', function () {
+Route::get('/admindashboard', function () {
 
-    return view('admin.dashboard');
+
 
 
     // if (Auth::user()->role == 'investor') {
@@ -95,6 +95,7 @@ Route::get('/dashboard', function () {
     // } else if (Auth::user()->role == 'admin') {
     //     return view('admin.dashboard');
     // }
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 
@@ -174,19 +175,6 @@ Route::middleware('auth')->group(function () {
 
     // withdraw
     Route::get('/investor/withdraw', [InvestorController::class, 'withdraw'])->name('investor.with');
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
 require __DIR__ . '/auth.php';
