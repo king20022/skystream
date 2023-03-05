@@ -28,7 +28,7 @@
             <div class="user-info">
                 <div class="admin-image"> <img src="assets/images/random-avatar7.jpg" alt=""> </div>
                 <div class="admin-action-info">
-                    <h3>{{ Auth::user()->name }}</h3>
+                    <h3></h3>
                     <ul>
 
                     </ul>

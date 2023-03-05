@@ -14002,11 +14002,11 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
 }
 
 .ls-closed .sidebar .info-container .name {
-    color: #444 !important
+    color: #444 !important;
 }
 
 .ls-closed section.content {
-    margin-left: 15px
+    margin-left: 15px;
 }
 
 .ls-closed .bars:after,
@@ -14025,7 +14025,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    transition: all 0.3s
+    transition: all 0.3s;
 }
 
 .ls-closed .bars:before {
@@ -14053,19 +14053,19 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
 }
 
 .overlay-open .bars:before {
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0)
+    -moz-transform: scale(0)!important;
+    -ms-transform: scale(0)!important;
+    -o-transform: scale(0)!important;
+    -webkit-transform: scale(0)!important;
+    transform: scale(0)!important;
 }
 
 .overlay-open .bars:after {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1)
+    -moz-transform: scale(1)!important;
+    -ms-transform: scale(1)!important;
+    -o-transform: scale(1)!important;
+    -webkit-transform: scale(1)!important;
+    transform: scale(1)!important;
 }
 
 .navbar-header {
@@ -14127,15 +14127,15 @@ input[type=checkbox]:not(:disabled).tabbed:focus~.lever::after {
 
 @media only screen and (max-width: 500px) {
     .overlay-open .sidebar .user-info {
-        height: 105px
+        height: 105px;
     }
 
     .overlay-open .sidebar .user-info .quick-stats {
-        display: none
+        display: none;
     }
 
     .overlay-open .sidebar .legal {
-        padding: 5px 15px
+        padding: 5px 15px;
     }
 }
 

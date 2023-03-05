@@ -395,7 +395,7 @@
                                             anything,
                                             but is
                                             also designed to help you reach all your goals in the days ahead.</p>
-                                        <div class="top-border"><a href="financial-planning.html"
+                                        <div class="top-border"><a href="{{ route('financial') }}"
                                                 class="button w-button" style="background-color:#fcb42d">Learn
                                                 More</a></div>
                                     </div>
@@ -432,10 +432,10 @@
                                             style="background-image:url(public/img/crypto.jpg)" href="crypto.html"
                                             class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="crypto.html" class="title-white-link">
+                                                href="{{ route('crypto') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="crypto.html" class="text-white">Cryptocurrency</a>
+                                                <div><a href="{{ route('crypto') }}" class="text-white">Cryptocurrency</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -444,10 +444,10 @@
                                             style="background-image:url(public/img/agriculture.jpg)"
                                             href="enegry-sustain.html" class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="agriculture.html" class="title-white-link">Services
+                                                href="{{ route('culture') }}" class="title-white-link">Services
                                             </a>
                                             <div>
-                                                <div class="text-white"><a href="agriculture.html"
+                                                <div class="text-white"><a href="{{ route('culture') }}"
                                                         class="text-white">Agriculture</a></div>
                                             </div>
                                         </div>
@@ -456,10 +456,10 @@
                                             style="background-image:url(public/img/agriculture.jpg)"
                                             href="stocks.html" class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="stocks.html" class="title-white-link">
+                                                href="{{ route('stocks') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="stocks.html" class="text-white">Stocks</a></div>
+                                                <div><a href="{{ route('stocks') }}" class="text-white">Stocks</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -467,10 +467,10 @@
                                             style="background-image:url(public/img/oil_and_gas.jpg)"
                                             href="oil-and-gas.html" class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="oil-and-gas.html" class="title-white-link">Services
+                                                href="{{ route('oilgas') }}" class="title-white-link">Services
                                                 Services</a>
                                             <div>
-                                                <div><a href="oil-and-gas.html" class="text-white">Oil & Gas</a>
+                                                <div><a href="{{ route('oilgas') }}" class="text-white">Oil & Gas</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -479,10 +479,10 @@
                                             style="background-image:url(public/img/agriculture.jpg)"
                                             href="real-estate.html" class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="real-estate.html" class="title-white-link">Services
+                                                href="{{ route('realestate') }}" class="title-white-link">Services
                                             </a>
                                             <div>
-                                                <div><a href="real-estate.html" class="text-white">Real
+                                                <div><a href="{{ route('realestate') }}" class="text-white">Real
                                                         Estate</a></div>
                                             </div>
                                         </div>
@@ -491,10 +491,10 @@
                                             style="background-image:url(public/img/forex_trade.jpg)" href="forex.html"
                                             class="team-image-link w-inline-block"></a>
                                         <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="forex.html" class="title-white-link">
+                                                href="{{ route('forex') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="forex.html" class="text-white">Forex Trading</a>
+                                                <div><a href="{{ route('forex') }}" class="text-white">Forex Trading</a>
                                                 </div>
                                             </div>
                                         </div>
