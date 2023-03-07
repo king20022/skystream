@@ -9,7 +9,10 @@ class HomeController extends Controller
 {
     public function create()
     {
-        return view('welcome');
+
+        $investment = Investment::all();
+        return view('welcome', compact('investment'));
+        // return view('welcome');
     }
 
     public function show()

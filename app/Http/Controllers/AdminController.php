@@ -15,13 +15,13 @@ class AdminController extends Controller
 
     {
         $payment = Payment::all();
-        return view('admin.addcoin', compact('payment'));
+        return view('Admin.addcoin', compact('payment'));
     }
 
     public function addd()
     {
         $investment = Investment::all();
-        return view('admin.addinvestment', compact('investment'));
+        return view('Admin.addinvestment', compact('investment'));
     }
 
 
@@ -30,7 +30,7 @@ class AdminController extends Controller
     public function show()
     {
         $user = User::orderby('id', 'desc')->get();
-        return view('admin.investors', compact('user'));
+        return view('Admin.investors', compact('user'));
     }
 
 
@@ -39,7 +39,7 @@ class AdminController extends Controller
     {
 
         $user = User::findOrFail($id);
-        return view('admin.profile', compact('user'));
+        return view('Admin.profile', compact('user'));
     }
 
 
@@ -89,7 +89,7 @@ class AdminController extends Controller
     public function coin()
     {
 
-        return view('admin.coinform');
+        return view('Admin.coinform');
     }
 
 
@@ -103,12 +103,7 @@ class AdminController extends Controller
         $payment->name = $request->input('name');
         $payment->address = $request->input('address');
         $payment->save();
-
-        // return back();
-        // return view('Admin.coinform');
-        // return redirect()->back()->with('success', 'Investor details deleted successfully.');
-        // Redirect back to the previous page with a success message
-        // return redirect()->route('Admin.addcoin')->with('success', 'Data has been inserted successfully.');
+;
         return redirect()->route('investor.add');
     }
 
@@ -128,7 +123,7 @@ class AdminController extends Controller
 
     public function investment()
     {
-        return view('admin.investmentform');
+        return view('Admin.investmentform');
     }
 
 

@@ -14,7 +14,7 @@ class InvestorController extends Controller
     public function show()
     {
         $user = auth()->user();
-        return view('Investor.dashboard', ['user' => $user]);
+        return view('Investor.board', ['user' => $user]);
         // return view('Investor.dashboard');
     }
 
@@ -32,7 +32,7 @@ class InvestorController extends Controller
     public function coin()
     {
         $payment = Payment::all();
-        return view('investor.address', compact('payment'));
+        return view('Investor.address', compact('payment'));
     }
 
 
@@ -53,7 +53,7 @@ class InvestorController extends Controller
     public function withdraw()
     {
         $user = auth()->user();
-        return view('Investor.withdraw', ['user' => $user]);
+        return view('investor.withdraw', ['user' => $user]);
         // return view('Investor.withdraw');
     }
 }

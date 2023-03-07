@@ -172,7 +172,7 @@
 
     </footer>
 
-    <div style="position:fixed;bottom:15%;left:2%;z-index:999999;" id="gtranslate_wrapper">
+    <div style="position:fixed;bottom:25%;left:2%;z-index:999999;" id="gtranslate_wrapper">
         <!-- GTranslate: https://gtranslate.io/ -->
         <select onchange="doGTranslate(this);" class="notranslate" id="gtranslate_selector"
             aria-label="Website Language Selector">
@@ -582,8 +582,8 @@
         .mgm {
             border-radius: 7px;
             position: fixed;
-            z-index: 90;
-            bottom: 80px;
+            z-index: 150;
+            bottom: 420px;
             right: 50px;
             background: #fff;
             padding: 10px 27px;
@@ -691,7 +691,7 @@
             border-radius: 7px;
             position: fixed;
             z-index: 150;
-            bottom: 80px;
+            bottom: 420px;
             right: 50px;
             background: black;
             padding: 10px 27px;

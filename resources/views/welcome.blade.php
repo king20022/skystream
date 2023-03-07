@@ -27,7 +27,7 @@
                                     and
                                     embrace <br /> innovation to help our clients navigate the uncertainty of capital
                                     markets</p>
-                            </div><a href="{{route ('register')}}" data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544331a"
+                            </div><a href="{{ route('register') }}" data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544331a"
                                 style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
                                 class="button w-button btnhov">GET STARTED</a>
                         </div>
@@ -49,7 +49,7 @@
                                     to our
                                     consistent
                                     investment <br />philosophy and disciplined research process</p>
-                            </div><a href="{{route ('register')}}" class="button w-button btnhov">GET STARTED</a>
+                            </div><a href="{{ route('register') }}" class="button w-button btnhov">GET STARTED</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                                     our <br />
                                     Investment
                                     Performance Highlights.</p>
-                            </div><a href="{{route ('register')}}" class="button w-button btnhov">GET STARTED</a>
+                            </div><a href="{{ route('register') }}" class="button w-button btnhov">GET STARTED</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                                             assets, you
                                             will discover...</p>
                                     </div>
-                                    <div class="top-border"><a href="{{ route ('alternative')}}"
+                                    <div class="top-border"><a href="{{ route('alternative') }}"
                                             class="button w-button" style="background-color:#fcb42d">learn
                                             more</a></div>
                                 </div>
@@ -226,8 +226,8 @@
                                             to
                                             their private markets...</p>
                                     </div>
-                                    <div class="top-border"><a href="{{ route ('realasset')}}" class="button w-button"
-                                            style="background-color:#fcb42d">learn more</a>
+                                    <div class="top-border"><a href="{{ route('realasset') }}"
+                                            class="button w-button" style="background-color:#fcb42d">learn more</a>
                                     </div>
                                 </div>
                             </div>
@@ -247,8 +247,8 @@
                                             long
                                             track record of managing...</p>
                                     </div>
-                                    <div class="top-border"><a href="{{ route ('alternative')}}" class="button w-button"
-                                            style="background-color:#fcb42d">learn more</a>
+                                    <div class="top-border"><a href="{{ route('alternative') }}"
+                                            class="button w-button" style="background-color:#fcb42d">learn more</a>
                                     </div>
                                 </div>
                             </div>
@@ -435,7 +435,8 @@
                                                 href="{{ route('crypto') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="{{ route('crypto') }}" class="text-white">Cryptocurrency</a>
+                                                <div><a href="{{ route('crypto') }}"
+                                                        class="text-white">Cryptocurrency</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -459,7 +460,8 @@
                                                 href="{{ route('stocks') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="{{ route('stocks') }}" class="text-white">Stocks</a></div>
+                                                <div><a href="{{ route('stocks') }}" class="text-white">Stocks</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -494,7 +496,8 @@
                                                 href="{{ route('forex') }}" class="title-white-link">
                                                 Services</a>
                                             <div>
-                                                <div><a href="{{ route('forex') }}" class="text-white">Forex Trading</a>
+                                                <div><a href="{{ route('forex') }}" class="text-white">Forex
+                                                        Trading</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -556,270 +559,29 @@
                     <div>
                         <label>
                             <input type="radio" name="radio" onclick="selectPlan('weekly')" checked />
-                            <span>Standard</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="radio" onclick="selectPlan('monthly')" />
-                            <span>Advanced</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="radio" onclick="selectPlan('nfp')" />
-                            <span>NFP</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="radio" onclick="selectPlan('btc')" />
-                            <span>BTC</span>
+                            <span>choose a plan</span>
                         </label>
                     </div>
                 </fieldset><br />
                 <div class="price-tab weekly">
                     <div class="pricing-table">
+                      
+
+                        @foreach ($investment as $investment)
                         <div class="pricing-box-2">
-                            <h2>CORPORATE PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">40% - 45% PIPS</span>
+                            <h2>{{$investment->investmentPlan}} </h2>
+                            <span class="price" style="background-color:#fcb42d">{{$investment->pip}}</span>
 
                             <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
+                            <a class="btn" href="{{ route ('register')}}"><b>Get Started</b></a>
                             <span class="pricing-table-divider"></span>
                             <ul>
-                                <li>minimum:$50,000</li>
-                                <li>maximum:UNLIMITED</li>
+                                <li>minimum:${{$investment->minimum}}</li>
+                                <li>maximum:${{$investment->maximum}}</li>
                                 <li>24/7 active support</li>
                             </ul>
                         </div>
-                        <div class="pricing-box-2">
-                            <h2>ULTIMATE PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">35% - 40% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$20,000</li>
-                                <li>maximum:$49,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>PREMIUM PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">30% - 35% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$10,000</li>
-                                <li>maximum:$19,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>MASTER PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">25% - 30% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$5,000</li>
-                                <li>maximum:$9,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>STANDARD PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">20% - 25% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$3,000</li>
-                                <li>maximum:$4,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>REGULAR PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">15% - 20% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$1,000</li>
-                                <li>maximum:$2,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-tab monthly">
-                    <div class="pricing-table">
-                        <div class="pricing-box-2">
-                            <h2>CORPORATE PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">70% - 80% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$200,000</li>
-                                <li>maximum:UNLIMITED</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>ULTIMATE PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">60% - 70% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$100,000</li>
-                                <li>maximum:$199,000</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>PREMIUM PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">50% - 60% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$50,000</li>
-                                <li>maximum:$99,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>MASTER PLUS PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">40% - 45% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$10,000</li>
-                                <li>maximum:$19,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>STANDARD PLAN </h2>
-                            <span class="price" style="background-color:#fcb42d">30% - 40% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$1,000</li>
-                                <li>maximum:$9,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-tab nfp">
-                    <div class="pricing-table">
-                        <div class="pricing-box-2">
-                            <h2>ULTIMATE PLAN </h2>
-                            <span class="price">200% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$150,000</li>
-                                <li>maximum:UNLIMITED</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>STARTER PLAN </h2>
-                            <span class="price">100% - 124% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$50,000</li>
-                                <li>maximum:$99,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>PREMIUM PLAN </h2>
-                            <span class="price">150% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:$100,000</li>
-                                <li>maximum:$149,999</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-tab btc">
-                    <div class="pricing-table">
-
-
-
-                        <div class="pricing-box-2">
-                            <h2>PRO CRYPTO</h2>
-                            <span class="price">90% - 95% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>30+ BTC</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-
-                        <div class="pricing-box-2">
-                            <h2>STANDARD CRYPTO</h2>
-                            <span class="price">70% - 75% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>5 - 14.9 BTC</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>PREMIUM CRYPTO</h2>
-                            <span class="price">80% - 85% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>15 - 29.9 BTC</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-box-2">
-                            <h2>BASIC CRYPTO</h2>
-                            <span class="price">65% - 70% PIPS</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="register.html"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>1 - 1.5 BTC</li>
-                                <li>24/7 active support</li>
-                            </ul>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
 

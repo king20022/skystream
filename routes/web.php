@@ -80,7 +80,7 @@ Route::get('/oilgas', [HomeController::class, 'even'])->name('oilgas');
 
 
 
-Route::get('/admindashboard', function () {
+Route::get('/dashboard', function () {
 
 
 
@@ -93,10 +93,10 @@ Route::get('/admindashboard', function () {
     if (Auth::user()->role == 'investor') {
         return redirect()->route('investor.show');
     } else if (Auth::user()->role == 'admin') {
-        return view('admin.dashboard');
+        return view('Admin.dashboard');
     }
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('admin.dashboard');
+    // return view('admin.dashboard');
+})->middleware(['auth', 'verified'])->name('Admin.dashboard');
 
 
 Route::middleware('auth')->group(function () {
