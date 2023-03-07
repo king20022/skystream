@@ -1,611 +1,845 @@
 <x-guest-layout>
-    <main>
-        <div id="Hero" data-easing="ease-in" class="hero-section w-tabs">
-            <div class="tabs-content w-tab-content">
-
-                <div data-w-tab="Tab 1" class="tab-pane w-pane _1 w-tab-pane w--tab-active"
-                    style="background-image:url(public/img/pexaa.jpg); background-position:center; background-size: cover; background-repeat:no-repeat;">
-                    <div class="content-wrapper w-container">
-                        <div class="hero-text">
-                            <div data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544330c"
-                                style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
-                                class="title-white"> ****** </div>
-                            <h1 data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544330e"
-                                style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:white !important"
-                                class="hero-heading">Fully Invested in <br /><span class="text-red"
-                                    style="color: #fcb42d">Better Outcomes</span>
-                            </h1>
-                            <div class="center-flex" style="background-color: #fcb42d">
-                                <div data-w-id="4dfd0268-6e8b-57ae-dc2a-f82405443314"
-                                    style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
-                                    class="red-line" style="background-color:#fcb42d"></div>
-                            </div>
-                            <div class="subtitle-box">
-                                <p data-w-id="4dfd0268-6e8b-57ae-dc2a-f82405443316"
-                                    style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
-                                    class="subtitle-white">As a global investment firm, we foster diverse perspectives
-                                    and
-                                    embrace <br /> innovation to help our clients navigate the uncertainty of capital
-                                    markets</p>
-                            </div><a href="{{ route('register') }}" data-w-id="4dfd0268-6e8b-57ae-dc2a-f8240544331a"
-                                style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
-                                class="button w-button btnhov">GET STARTED</a>
+    <!-- Slider Starts -->
+    <div id="main-slide" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators Starts -->
+        <ol class="carousel-indicators visible-lg visible-md">
+            <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slide" data-slide-to="1"></li>
+            <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <!-- Indicators Ends -->
+        <!-- Carousel Inner Starts -->
+        <div class="carousel-inner">
+            <!-- Carousel Item Starts -->
+            <div class="item active bg-parallax item-1">
+                <div class="slider-content">
+                    <div class="container">
+                        <div class="slider-text text-center">
+                            <h3 class="slide-title"><span>Profitable</span> Crypto <span>Trading </span> Investment
+                                Solutions</h3>
+                            <p>
+                                <a href="{{ route ('register')}}" class="slider btn btn-primary">Get Started</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div data-w-tab="Tab 2" class="tab-pane w-pane _3 w-tab-pane"
-                    style="background-image:url(public/img/home2.jpg); background-position:center; background-size: cover; background-repeat:no-repeat; ">
-                    <div class="content-wrapper w-container">
-                        <div class="hero-text">
-                            <div class="title-white"> ***** </div>
-                            <h1 class="hero-heading" style="color:black !important">Value investing <br /><span
-                                    class="text-red" style="color:#fcb42d">redefined</span></h1>
-                            <div class="center-flex">
-                                <div class="red-line" style="background-color:#fcb42d"></div>
-                            </div>
-                            <div class="subtitle-box">
-                                <p class="subtitle-white">At Exquisitecryptoventures, we create value by sticking
-                                    to our
-                                    consistent
-                                    investment <br />philosophy and disciplined research process</p>
-                            </div><a href="{{ route('register') }}" class="button w-button btnhov">GET STARTED</a>
-                        </div>
-                    </div>
-                </div>
-                <div data-w-tab="Tab 3" class="tab-pane w-pane _3 w-tab-pane"
-                    style="background-image:url(public/img/home3.jpg); background-position:center; background-size: cover; background-repeat:no-repeat; ">
-                    <div class="content-wrapper w-container">
-                        <div class="hero-text">
-                            <div class="title-white"> ***** </div>
-                            <h1 class="hero-heading">Building prosperity, security <br /><span class="text-red"
-                                    style="color:#fcb42d"> &
-                                    opportunity</span></h1>
-                            <div class="center-flex">
-                                <div class="red-line" style="background-color:#fcb42d"></div>
-                            </div>
-                            <div class="subtitle-box">
-                                <p class="subtitle-white">Discover the Exquisitecryptoventures difference and view
-                                    our <br />
-                                    Investment
-                                    Performance Highlights.</p>
-                            </div><a href="{{ route('register') }}" class="button w-button btnhov">GET STARTED</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-            <div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1" id="t-link1"
-                    class="tab-link  w-inline-block w-tab-link w--current">
-                    <div>Stocks </div>
-                </a><a data-w-tab="Tab 2" id="t-link2" class="tab-link w-inline-block w-tab-link">
-                    <div>Forex </div>
-                </a><a data-w-tab="Tab 3" id="t-link3" class="tab-link w-inline-block w-tab-link">
-                    <div>Infrastructure </div>
-                </a>
+            <!-- Carousel Item Ends -->
+            <!-- Carousel Item Starts -->
+            <div class="item bg-parallax item-2">
+                <div class="slider-content">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <div class="slider-text text-center">
+                                <h3 class="slide-title"><span>Crypto</span> Investment <br />You can <span>Trust</span>
+                                </h3>
+                                <p>
+                                    <a href="#plans" class="slider btn btn-primary">our Plans</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Item Ends -->
+        </div>
+        <!-- Carousel Inner Ends -->
+        <!-- Carousel Controlers Starts -->
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+            <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+            <span><i class="fa fa-angle-right"></i></span>
+        </a>
+        <!-- Carousel Controlers Ends -->
+    </div>
+    <!-- Slider Ends -->
+    <!-- Features Section Starts -->
+    <section class="features">
+        <div class="container">
+            <div class="row features-row">
+                <!-- Feature Box Starts -->
+                <div class="feature-box col-md-4 col-sm-12">
+                    <span class="feature-icon">
+                        <img id="download-bitcoin" src="images/icons/orange/download-bitcoin.png"
+                            alt="download bitcoin">
+                    </span>
+                    <div class="feature-box-content">
+                        <h3>Open an account</h3>
+                        <p>Click on the register button to create an account. It's totally easy and free</p>
+                    </div>
+                </div>
+                <!-- Feature Box Ends -->
+                <!-- Feature Box Starts -->
+                <div class="feature-box two col-md-4 col-sm-12">
+                    <span class="feature-icon">
+                        <img id="add-bitcoins" src="images/icons/orange/add-bitcoins.png" alt="add bitcoins">
+                    </span>
+                    <div class="feature-box-content">
+                        <h3>Deposit/Invest Funds</h3>
+                        <p>Choose an investment plan and make your first deposit</p>
+                    </div>
+                </div>
+                <!-- Feature Box Ends -->
+                <!-- Feature Box Starts -->
+                <div class="feature-box three col-md-4 col-sm-12">
+                    <span class="feature-icon">
+                        <img id="buy-sell-bitcoins" src="images/icons/orange/buy-sell-bitcoins.png"
+                            alt="buy and sell bitcoins">
+                    </span>
+                    <div class="feature-box-content">
+                        <h3>WIthdraw Funds</h3>
+                        <p>Request for the withdrawal and receive instant payment</p>
+                    </div>
+                </div>
+                <!-- Feature Box Ends -->
+            </div>
+    </section>
+    <!-- Features Section Ends -->
+    <!-- About Section Starts -->
+    <section id="aboutus" class="about-us">
+        <div class="container">
+            <!-- Section Title Starts -->
+            <div class="row text-center">
+                <h2 class="title-head">About <span>Us</span></h2>
+                <div class="title-head-subtitle">
+                    <p>SuperTrix Fx is an Online Digital trading platform, where companies, individuals and firms are
+                        given the opportunity to earn from Crypto trading & forex Exchange, by investing their capital
+                        through cryptocurrency, which will be used to start up a trading section for you.</p>
+                </div>
+            </div>
+            <!-- Section Title Ends -->
+            <!-- Section Content Starts -->
+            <div class="row about-content">
+                <!-- Image Starts -->
+                <div class="col-sm-12 col-md-5 col-lg-6 text-center">
+                    <img id="about-us" class="img-responsive img-about-us" src="images/about-us.png" alt="about us">
+                </div>
+                <!-- Image Ends -->
+                <!-- Content Starts -->
+                <div class="col-sm-12 col-md-7 col-lg-6">
+                    <h3 class="title-about">WE ARE Sky stream exchange</h3>
+                    <p class="about-text">A special trading system developed by our specialists significantly reduces
+                        financial risks, while increasing the efficiency of trading sessions at the same time.
+                        Verityinvest has its own business model, which allows investors to receive high interest rates
+                        on a daily basis, regardless of changes in the financial market, which not every company can
+                        keep up with.
+
+                    </p>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#menu1">Our Mission</a></li>
+                        <li><a data-toggle="tab" href="#menu2">Our advantages</a></li>
+                        <li><a data-toggle="tab" href="#menu3">Our guarantees</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="menu1" class="tab-pane fade in active">
+                            <p>The platform created by us provides our investors with the most comfortable conditions,
+                                in order to help them engage in the investment process. Our professional traders, guided
+                                by their own unique trading strategy, will allow our clients to receive such revenue,
+                                which even an experienced investor will envy. The whole investment process takes place
+                                on terms that are favorable for our investors; everyone will be satisfied with the
+                                cooperation with our company. Join us and you will learn how to invest easily and
+                                efficiently.</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <p>Adhering to highest compliance standards <br>
+
+                                As an international regulated financial intermediary subject to the rules set out by the
+                                Swiss self-regulatory organization (SRO – VQF ) Evelo Limited operates under
+                                international law and according to AML (anti-money laundering) regulations.</p>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                            <p>We are here because we are passionate about open, transparent markets and aim to be a
+                                major driving force in widespread adoption, we are the first and the best in crypto
+                                Investments. </p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" href="{{ route ('register')}}">Join us</a>
+                </div>
+                <!-- Content Ends -->
+            </div>
+            <!-- Section Content Ends -->
+        </div>
+    </section>
+    <!-- About Section Ends -->
+    <!-- Features and Video Section Starts -->
+    <section id="features" class="image-block">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Features Starts -->
+                <div class="col-md-8 ts-padding img-block-left">
+                    <div class="gap-20"></div>
+                    <div class="row text-center">
+                        <h2 class="title-head">Why Choose Us?</h2>
+                        <div class="title-head-subtitle">
+                            <p>We are a worldwide investment company committed to the principle of revenue maximization
+                                and reduction of the financial risks in investing.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Feature Starts -->
+                        <div class="col-sm-6 col-md-6 col-xs-12">
+                            <div class="feature text-center">
+                                <span class="feature-icon">
+                                    <img id="strong-security" src="images/icons/orange/strong-security.png"
+                                        alt="strong security" />
+                                </span>
+                                <h3 class="feature-title">Instant Withdrawals</h3>
+                                <p>Get your payment instantly through requesting it! We don't take percentage.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Ends -->
+                        <div class="gap-20-mobile"></div>
+                        <!-- Feature Starts -->
+                        <div class="col-sm-6 col-md-6 col-xs-12">
+                            <div class="feature text-center">
+                                <span class="feature-icon">
+                                    <img id="world-coverage" src="images/icons/orange/world-coverage.png"
+                                        alt="world coverage" />
+                                </span>
+                                <h3 class="feature-title">Referral System</h3>
+                                <p>Promote the company and earn unlimited referral commission from each referral.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Ends -->
+                    </div>
+                    <div class="gap-20"></div>
+                    <div class="row">
+                        <!-- Feature Starts -->
+                        <div class="col-sm-6 col-md-6 col-xs-12">
+                            <div class="feature text-center">
+                                <span class="feature-icon">
+                                    <img id="payment-options" src="images/icons/orange/payment-options.png"
+                                        alt="payment options" />
+                                </span>
+                                <h3 class="feature-title">Blockchain Ecosystem</h3>
+                                <p>Get mining with a big profit, and Miner is calculated with the blockchain ecosystem.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Feature Ends -->
+                        <div class="gap-20-mobile"></div>
+                        <!-- Feature Starts -->
+                        <div class="col-sm-6 col-md-6 col-xs-12">
+                            <div class="feature text-center">
+                                <span class="feature-icon">
+                                    <img id="mobile-app" src="images/icons/orange/mobile-app.png" alt="mobile app" />
+                                </span>
+                                <h3 class="feature-title">Profitable Plans</h3>
+                                <p>Our investment plans are tailored to the level of your investment opportunities.</p>
+                            </div>
+                        </div>
+                        <!-- Feature Ends -->
+                    </div>
+
+
+                </div>
+                <!-- Features Ends -->
+                <!-- Video Starts -->
+                <div class="col-md-4 ts-padding bg-image-1">
+                    <div>
+                        <div class="text-center">
+                            <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Ends -->
             </div>
         </div>
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener"
-                    target="_blank">
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-                        {
-                            "symbols": [{
-                                    "proName": "FOREXCOM:SPXUSD",
-                                    "title": "S&P 500"
-                                },
-                                {
-                                    "proName": "FOREXCOM:NSXUSD",
-                                    "title": "US 100"
-                                },
-                                {
-                                    "proName": "FX_IDC:EURUSD",
-                                    "title": "EUR/USD"
-                                },
-                                {
-                                    "proName": "BITSTAMP:BTCUSD",
-                                    "title": "Bitcoin"
-                                },
-                                {
-                                    "proName": "BITSTAMP:ETHUSD",
-                                    "title": "Ethereum"
-                                }
-                            ],
-                            "colorTheme": "dark",
-                            "isTransparent": true,
-                            "showSymbolLogo": true,
-                            "locale": "en"
-                        }
-                    </script>
-            </div>
-            <!-- TradingView Widget END -->
-
-
-
-            <div id="Meals" data-w-id="951a5aea-0c94-bead-267a-f4d02c37cbb3" class="content-section"
-                style="margin-bottom:0px !important">
-                <div class="content-wrapper w-container">
-                    <div class="flex">
-
-                        <div data-w-id="311e2a2e-91b9-3f0d-61de-29a5bdd9323c" class="_2-60-column">
-                            <div class="bottom-border">
-                                <div class="header-flex-stretch">
-                                    <div class="header-border-flex">
-                                        <h2 class="h2-title-green">*******
-                                        </h2>
-                                    </div>
-                                    <div class="_2-top-padding">
-                                        <div class="green-line"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <h4 class=" h2-title">Our advisors connect your finances to
-                                        what you want out of life and create
-                                        a plan designed to make it happen, revealing possibilities while protecting you
-                                        from
-                                        the
-                                        unexpected—today and every day after.</h4>
-                                    <ul>
-                                        <li> A personalized plan that brings all aspects of your financial life together
-                                        </li>
-                                        <li> A strategic mix of insurance and investments working together for your
-                                            goals
-                                        </li>
-                                        <li> Your go-to financial expert who helps keep your big picture, and dreams, in
-                                            focus
-                                        </li>
-                                    </ul>
-                                    <br /><br />
-                                    <a href="#" target="_blank" class="button w-button"
-                                        style="background-color:#fcb42d">View Certificate of Incoporation</a>
-                                </div>
-                                <div class="col-lg-6 col-12">
-                                    <img src="public/img/certificate.jpg" class="img-fluid"
-                                        alt="a company certificate" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+    <!-- Features and Video Section Ends -->
+    <!-- Pricing Starts -->
+    <section id="plans" class="pricing">
+        <div class="container">
+            <!-- Section Title Starts -->
+            <div class="row text-center">
+                <h2 class="title-head">Investment <span>Plans</span></h2>
+                <div class="title-head-subtitle">
+                    <p>Complete Packages For Every Trader</p>
                 </div>
             </div>
+            <!-- Section Title Ends -->
+            <!-- Section Content Starts -->
+            <div class="row pricing-tables-content">
+                <div class="pricing-container">
 
 
+                    <!-- Pricing Tables Starts -->
+                    <ul class="pricing-list bounce-invert">
+                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #1 Starts -->
+                                <li data-type="buy" class="is-visible">
+                                    <header class="pricing-header">
+                                        <h2>Starter Plan</h2>
 
+                                        <div class="price">
 
-            <div class="content-section">
-                <div class="content-wrapper w-container">
-                    <div>
-                        <div data-w-id="0bf1a607-5352-bd3f-c3ed-9fa290b4e3c8"
-                            style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-                            class="heading-container">
-                            <div class="flex-header">
-                                <div class="line"></div>
+                                            <span class="value" style="font-size: 30px;">$50 - $3,999</span>
+                                        </div>
+                                        <h2>Profit <span> 6% </span> </h2>
+                                        <h2>Duration <span> 48 Hours</span></h2>
+                                    </header>
+                                    <footer class="pricing-footer">
+                                        <a href="user/signup.html" class="btn btn-primary">Get Started</a>
+                                    </footer>
+                                </li>
+                                <!-- Buy Pricing Table #1 Ends -->
 
-                                <div class="line"></div>
-                            </div>
+                            </ul>
+                        </li>
+                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #2 Starts -->
+                                <li data-type="buy" class="is-visible">
+                                    <header class="pricing-header">
+                                        <h2>Silver Plan</h2>
 
-                        </div>
-                        <div class="grid">
-                            <div data-w-id="3af811a3-53e3-7621-5e9c-2551c98023c8" class="box _1"
-                                style="background-image:url(public/img/2716_4200_150113_rgb.png)">
-                                <div class="gradient"></div>
-                                <div class="box-text">
-                                    <div class="title-white">Sectors</div>
-                                    <h3 class="h3-white-title">Institutional investment Mangement</h3>
-                                    <div class="top-border medium">
-                                        <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                    </div>
-                                    <div class="top-border">
-                                        <p class="paragraph-white">When you select Exquisitecryptoventures to manage
-                                            institutional
-                                            assets, you
-                                            will discover...</p>
-                                    </div>
-                                    <div class="top-border"><a href="{{ route('alternative') }}"
-                                            class="button w-button" style="background-color:#fcb42d">learn
-                                            more</a></div>
-                                </div>
-                            </div>
-                            <div data-w-id="b373832c-dcdb-39cd-e3fb-6a6c71c5395b" class="box _2"
-                                style=" background-image:url(public/img/ggp_091614_shops_at_la_cantera_0454.jpg)">
-                                <div class="gradient"></div>
-                                <div class="box-text">
-                                    <div class="title-white">Sectors</div>
-                                    <h3 class="h3-white-title">Real Assets</h3>
-                                    <div class="top-border medium">
-                                        <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                    </div>
-                                    <div class="top-border">
-                                        <p class="paragraph-white">Investors looking to add a broad real assets
-                                            allocation
-                                            to
-                                            their private markets...</p>
-                                    </div>
-                                    <div class="top-border"><a href="{{ route('realasset') }}"
-                                            class="button w-button" style="background-color:#fcb42d">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="d8eff478-08a8-8c8c-c4a2-dce84037f78f" class="box _3"
-                                style="background-image:url(public/img/Alt_Invest_1x.png)">
-                                <div class="gradient"></div>
-                                <div class="box-text">
-                                    <div class="title-white">Sectors</div>
-                                    <h3 class="h3-white-title">Alternatives</h3>
-                                    <div class="top-border medium">
-                                        <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                    </div>
-                                    <div class="top-border">
-                                        <p class="paragraph-white">As a pioneer in alternative investing,
-                                            Exquisitecryptoventures has
-                                            a
-                                            long
-                                            track record of managing...</p>
-                                    </div>
-                                    <div class="top-border"><a href="{{ route('alternative') }}"
-                                            class="button w-button" style="background-color:#fcb42d">learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-w-id="d971ef4b-c7e5-4097-8714-c0851e51643e" class="full-line"></div>
-                    </div>
+                                        <div class="price">
+
+                                            <span class="value" style="font-size: 30px;">$4,000 - $10,000</span>
+                                        </div>
+                                        <h2>Profit <span> 11% </span> </h2>
+                                        <h2>Duration <span> 4 Days</span></h2>
+                                    </header>
+                                    <footer class="pricing-footer">
+                                        <a href="user/signup.html" class="btn btn-primary">Get Started</a>
+                                    </footer>
+                                </li>
+                                <!-- Buy Pricing Table #2 Ends -->
+
+                            </ul>
+                        </li>
+                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #3 Starts -->
+                                <li data-type="buy" class="is-visible">
+                                    <header class="pricing-header">
+                                        <h2>Gold Plan</h2>
+
+                                        <div class="price">
+
+                                            <span class="value" style="font-size: 30px;">$10,000 - $16,000</span>
+                                        </div>
+                                        <h2>Profit <span> 31% </span> </h2>
+                                        <h2>Duration <span> 6 Days</span></h2>
+                                    </header>
+                                    <footer class="pricing-footer">
+                                        <a href="user/signup.html" class="btn btn-primary">Get Started</a>
+                                    </footer>
+                                </li>
+                                <!-- Buy Pricing Table #3 Ends -->
+
+                            </ul>
+                        </li>
+
+                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #3 Starts -->
+                                <li data-type="buy" class="is-visible">
+                                    <header class="pricing-header">
+                                        <h2>Diamond Plan</h2>
+
+                                        <div class="price">
+
+                                            <span class="value" style="font-size: 30px;">$16,000 - $19,999</span>
+                                        </div>
+                                        <h2>Profit <span> 40% </span> </h2>
+                                        <h2>Duration <span> 8 Days</span></h2>
+                                    </header>
+                                    <footer class="pricing-footer">
+                                        <a href="user/signup.html" class="btn btn-primary">Get Started</a>
+                                    </footer>
+                                </li>
+                                <!-- Buy Pricing Table #3 Ends -->
+
+                            </ul>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
-
-
-            <div class="content-section">
-                <div class="content-wrapper w-container">
-                    <div class="z-index">
-                        <div class="flex">
-                            <div class="_50-column center-flex">
-                                <img src="public/img/tima.jpg" />
-                            </div>
-                            <div class="_50-column-center _2-left-padding">
-                                <div data-w-id="ec6c5fa6-39e8-604f-8e94-3db50a31d720" class="mobile-top-border">
-                                    <div class="bottom-border small">
-                                        <div class="header-flex-stretch">
-                                            <div class="header-border-flex">
-                                                <div class="left-border medium">
-                                                    <div class="circle-red checkmark"
-                                                        style="background-color:#fcb42d">
-                                                    </div>
-                                                </div>
-                                                <h4 class="h4-title">Investor <br />Relations</h4>
-                                            </div>
-                                            <div class="top-padding">
-                                                <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="side-padding">
-                                        <p>Exquisitecryptoventures provides advanced investment strategies and wealth
-                                            management
-                                            solutions to
-                                            forward-thinking investors around the world. Through its distinct investment
-                                            brands
-                                            Exquisitecryptoventures Management, we offers a diversity of investment
-                                            approaches,
-                                            encompassing
-                                            bottom-up fundamental active management, Responsible Investing, systematic
-                                            investing
-                                            and customized implementation of client-specified portfolio exposures.
-                                            Exemplary
-                                            service, timely innovation and attractive returns across market cycles have
-                                            been
-                                            hallmarks of Exquisitecryptoventures since the origin.
-
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+    </section>
+    <!-- Pricing Ends -->
+    <!-- Bitcoin Calculator Section Starts -->
+    <section class="bitcoin-calculator-section">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading Starts -->
+                <div class="col-md-12">
+                    <h2 class="title-head text-center"><span>Bitcoin</span> Calculator</h2>
+                    <p class="message text-center">Find out the current Bitcoin value with our easy-to-use converter
+                    </p>
+                </div>
+                <!-- Section Heading Ends -->
+                <!-- Bitcoin Calculator Form Starts -->
+                <div class="col-md-12 text-center">
+                    <form class="bitcoin-calculator" id="bitcoin-calculator">
+                        <!-- Input #1 Starts -->
+                        <input class="form-input" name="btc-calculator-value" value="1">
+                        <!-- Input #1 Ends -->
+                        <div class="form-info"><i class="fa fa-bitcoin"></i></div>
+                        <div class="form-equal">=</div>
+                        <!-- Input/Result Starts -->
+                        <input class="form-input form-input-result" name="btc-calculator-result">
+                        <!-- Input/Result Ends -->
+                        <!-- Select Currency Starts -->
+                        <div class="form-wrap">
+                            <select id="currency-select" class="form-input select-currency select-primary"
+                                name="btc-calculator-currency" data-dropdown-class="select-primary-dropdown"></select>
                         </div>
-                        <div class="full-line bottom-border"></div>
-                    </div>
+                        <!-- Select Currency Ends -->
+                    </form>
+                    <p class="info"><i>* Data updated every 15 minutes</i></p>
+                </div>
+                <!-- Bitcoin Calculator Form Ends -->
+            </div>
+        </div>
+    </section>
+    <!-- Bitcoin Calculator Section Ends -->
 
-                    <div class="z-index">
-                        <div class="flex">
-                            <div class="_50-column-center left-padding">
-                                <div data-w-id="36257473-430c-fe10-0168-0c0e11d7f547" class="landscape-border">
-                                    <div class="bottom-border small">
-                                        <div class="header-flex-stretch">
-                                            <div class="header-border-flex">
-                                                <div class="left-border medium">
-                                                    <div class="circle-red checkmark"
-                                                        style="background-color:#fcb42d">
-                                                    </div>
-                                                </div>
-                                                <h4 class="h4-title">Our Diversity & <br /> Inclusion Strategy </h4>
-                                            </div>
-                                            <div class="top-padding">
-                                                <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="side-padding">
-
-                                        <p>At Exquisitecryptoventures, we want every person to have the opportunity to
-                                            succeed based
-                                            on
-                                            merit,
-                                            regardless of race, color, religion, creed, ancestry, national origin, sex,
-                                            age,
-                                            disability, marital status, citizenship status, sexual orientation, gender
-                                            identity
-                                            expression, military or veteran status, or any other criterion. Why is this
-                                            so
-                                            important? To us, diverse and inclusive teams enriched with people of
-                                            distinctive
-                                            backgrounds make us better. They help us generate better ideas, reach more
-                                            balanced
-                                            decisions, engage our communities and help our clients achieve better
-                                            outcomes.
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="_50-column">
-
-                                <div class="ju"
-                                    style="display: flex; flex-direction:column; justify-content: space-between">
-                                    <!-- <br /> <br /><br /> <br /> -->
-                                    <img src="public/img/fauxels.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div data-w-id="e3a6919a-d5ba-2427-1c3d-002ceace4fb1" class="full-line bottom-border">
-                        </div>
-                    </div>
-
-                    <div class="z-index">
-                        <div class="flex">
-                            <div class="_50-column center-flex">
-                                <img src="public/img/pexeee.jpg" />
-                            </div>
-                            <div class="_50-column-center _2-left-padding">
-                                <div data-w-id="ec6c5fa6-39e8-604f-8e94-3db50a31d720" class="mobile-top-border">
-                                    <div class="bottom-border small">
-                                        <div class="header-flex-stretch">
-                                            <div class="header-border-flex">
-                                                <div class="left-border medium">
-                                                    <div class="circle-red checkmark"
-                                                        style="background-color:#fcb42d">
-                                                    </div>
-                                                </div>
-                                                <h4 class="h4-title">FINANCIAL <br />PLANNING</h4>
-                                            </div>
-                                            <div class="top-padding">
-                                                <div class="_2-red-line" style="background-color:#fcb42d"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="side-padding">
-                                        <p>These days, it's more important than ever to have a plan. Our version of
-                                            financial
-                                            planning not only gives you the confidence to know you're ready for
-                                            anything,
-                                            but is
-                                            also designed to help you reach all your goals in the days ahead.</p>
-                                        <div class="top-border"><a href="{{ route('financial') }}"
-                                                class="button w-button" style="background-color:#fcb42d">Learn
-                                                More</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Team Section Starts -->
+    <section class="team">
+        <div class="container">
+            <!-- Section Title Starts -->
+            <div class="row text-center">
+                <h2 class="title-head">TESTI<span>MONIES</span></h2>
+                <div class="title-head-subtitle">
+                    <p> What our customers has to say about us.</p>
                 </div>
             </div>
-
-
-
-
-            <div class="content-section" style="padding-top: 0px !important">
-                <div class="content-wrapper w-container">
-                    <div>
-                        <div data-w-id="14ebeeb3-13b3-79ad-a775-af11cc8926c9" class="heading-container">
-                            <div class="center-icon"> </div>
-                            <div class="flex-header">
-                                <div class="line"></div>
-                                <div class="heading-box">
-                                    <h2 class="h2-title"> </h2>
-                                </div>
-                                <div class="line"></div>
-                            </div>
-                            <div class="subheading">
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="collection-list-wrapper w-dyn-list">
-                                <div role="list" class="flex w-dyn-items">
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/crypto.jpg)" href="crypto.html"
-                                            class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('crypto') }}" class="title-white-link">
-                                                Services</a>
-                                            <div>
-                                                <div><a href="{{ route('crypto') }}"
-                                                        class="text-white">Cryptocurrency</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/agriculture.jpg)"
-                                            href="enegry-sustain.html" class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('culture') }}" class="title-white-link">Services
-                                            </a>
-                                            <div>
-                                                <div class="text-white"><a href="{{ route('culture') }}"
-                                                        class="text-white">Agriculture</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/agriculture.jpg)"
-                                            href="stocks.html" class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('stocks') }}" class="title-white-link">
-                                                Services</a>
-                                            <div>
-                                                <div><a href="{{ route('stocks') }}" class="text-white">Stocks</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/oil_and_gas.jpg)"
-                                            href="oil-and-gas.html" class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('oilgas') }}" class="title-white-link">Services
-                                                Services</a>
-                                            <div>
-                                                <div><a href="{{ route('oilgas') }}" class="text-white">Oil & Gas</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/agriculture.jpg)"
-                                            href="real-estate.html" class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('realestate') }}" class="title-white-link">Services
-                                            </a>
-                                            <div>
-                                                <div><a href="{{ route('realestate') }}" class="text-white">Real
-                                                        Estate</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="listitem" class="team-member w-dyn-item my-20"><a
-                                            style="background-image:url(public/img/forex_trade.jpg)" href="forex.html"
-                                            class="team-image-link w-inline-block"></a>
-                                        <div class="team-text-box" style="background-color:#fcb42d"><a
-                                                href="{{ route('forex') }}" class="title-white-link">
-                                                Services</a>
-                                            <div>
-                                                <div><a href="{{ route('forex') }}" class="text-white">Forex
-                                                        Trading</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="_2-content-section td-wrapper-top"
-                style="margin-bottom: 0px !important; padding-bottom: 0px !important; padding-top: 30px !important">
-                <div class="content-wrapper w-container"
-                    style="padding-bottom: 0px !important; padding-top: 0px !important">
-                    <div class="bottom-border large">
-                        <div style="margin-bottom: 0px">
-                            <div style="text-align: center;">
-                                <h1>Forex Cross Rates</h1>
-                                <br>
-                                <!-- TradingView Widget BEGIN -->
-                                <div class="tradingview-widget-container">
-                                    <div class="tradingview-widget-container__widget"></div>
-                                    <div class="tradingview-widget-copyright"><a
-                                            href="https://www.tradingview.com/markets/currencies/" rel="noopener"
-                                            target="_blank">
-                                    </div>
-                                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js"
-                                        async>
-                                        {
-                                            "width": "100%",
-                                            "height": "400",
-                                            "currencies": [
-                                                "EUR",
-                                                "USD",
-                                                "JPY",
-                                                "GBP",
-                                                "CHF",
-                                                "AUD",
-                                                "CAD",
-                                                "NZD"
-                                            ],
-                                            "isTransparent": false,
-                                            "colorTheme": "light",
-                                            "locale": "en"
-                                        }
-                                    </script>
-                                </div>
-                                <!-- TradingView Widget END -->
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper" id="wrapper-padding">
-                <fieldset>
-                    <div>
-                        <label>
-                            <input type="radio" name="radio" onclick="selectPlan('weekly')" checked />
-                            <span>choose a plan</span>
-                        </label>
-                    </div>
-                </fieldset><br />
-                <div class="price-tab weekly">
-                    <div class="pricing-table">
-                      
-
-                        @foreach ($investment as $investment)
-                        <div class="pricing-box-2">
-                            <h2>{{$investment->investmentPlan}} </h2>
-                            <span class="price" style="background-color:#fcb42d">{{$investment->pip}}</span>
-
-                            <span class="pricing-table-divider"></span>
-                            <a class="btn" href="{{ route ('register')}}"><b>Get Started</b></a>
-                            <span class="pricing-table-divider"></span>
-                            <ul>
-                                <li>minimum:${{$investment->minimum}}</li>
-                                <li>maximum:${{$investment->maximum}}</li>
-                                <li>24/7 active support</li>
+            <!-- Section Title Ends -->
+            <!-- Team Members Starts -->
+            <div class="row team-content team-members">
+                <!-- Team Member Starts --
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <div class="team-member">
+                        <!-- Team Member Picture Starts --
+                        <img src="images/team/member1.jpg" class="img-responsive" alt="team member">
+                        <!-- Team Member Picture Ends -->
+                <!-- Team Member Details Starts --
+                        <div class="team-member-caption social-icons">
+                            <h4>Nicholas Zachary Gary</h4>
+                            <p>Director </p>
+                            <ul class="list list-inline social">
+                                <li>
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-google-plus"></a>
+                                </li>
                             </ul>
                         </div>
-                        @endforeach
+                        <!-- Team Member Details Ends --
                     </div>
                 </div>
-
-
-            </div>
-
-            <div class="container mysliderbox" style="margin-bottom: 5px !important">
-                <h2 class="text-center ">Our Partners</h2>
-                <section class="customer-logos slider carousel-wrapper">
-                    <div class="slide"><img src="/public/jpegs/binance.png"></div>
-                    <div class="slide"><img src="/public/jpegs/coinbase.jpg"></div>
-                    <div class="slide"><img src="/public/jpegs/gemini.jpg"></div>
-                    <div class="slide"><img src="/public/jpegs/robinhood.jpg"></div>
-                    <div class="slide"><img src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg">
+                <!-- Team Member Ends -->
+                <!-- Team Member Starts -->
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <div class="team-member">
+                        <!-- Team Member Picture Starts -->
+                        <img src="images/team/member2.jpg" class="img-responsive" alt="team member">
+                        <!-- Team Member Picture Ends -->
+                        <!-- Team Member Details Starts -->
+                        <div class="team-member-caption social-icons">
+                            <h4>Marco Verratti</h4>
+                            <p>Sky stream exchange has liberated my life from abject poverty</p>
+                            <ul class="list list-inline social">
+                                <li>
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-google-plus"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Team Member Details Ends -->
                     </div>
-                    <div class="slide"><img src="/public/jpegs/binance.png"></div>
+                </div>
+                <!-- Team Member Ends -->
+                <!-- Team Member Starts -->
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <!-- Team Member-->
+                    <div class="team-member">
+                        <!-- Team Member Picture Starts -->
+                        <img src="images/team/member3.jpg" class="img-responsive" alt="team member">
+                        <!-- Team Member Picture Ends -->
+                        <!-- Team Member Details Starts -->
+                        <div class="team-member-caption social-icons">
+                            <h4>Lugan Christine</h4>
+                            <p>I really doubted it at first but now i beleive</p>
+                            <ul class="list list-inline social">
+                                <li>
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-google-plus"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Team Member Details Ends -->
+                    </div>
+                </div>
+                <!-- Team Member Ends -->
+                <!-- Team Member Starts -->
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <div class="team-member">
+                        <!-- Team Member Picture Starts -->
+                        <img src="images/team/member4.jpg" class="img-responsive" alt="team member">
+                        <!-- Team Member Picture Ends -->
+                        <!-- Team Member Details Starts -->
+                        <div class="team-member-caption social-icons">
+                            <h4>Antonio Conte</h4>
+                            <p>I am so happy to have benefitted from this oppurtunity</p>
+                            <ul class="list list-inline social">
+                                <li>
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa fa-google-plus"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Team Member Details Ends -->
+                    </div>
+                </div>
+                <!-- Team Member Ends -->
 
-                    <div class="slide"><img src="/public/jpegs/blockchain.jpg"></div>
-                    <div class="slide"><img src="/public/jpegs/ameritrade.jpg"></div>
-                    <div class="slide"><img src="/public/jpegs/gemini.jpg"></div>
-
-                </section>
             </div>
+            <!-- Team Members Ends -->
+        </div>
+    </section>
+    <!-- Team Section Ends -->
 
-    </main>
+
+
+    <!-- Section FAQ Starts -->
+    <section class="faq">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="title-head">FAQs</h2>
+                <div class="title-head-subtitle">
+                    <p>Frequently Asked Questions</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-12 col-md-12">
+                    <!-- Panel Group Starts -->
+                    <div class="panel-group" id="accordion">
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        How do i get started?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Create your own account to get started. It takes a few minutes
+                                    to complete registration.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapse2">
+                                        Is Sky stream exchange financial investment platform availability for the public?
+                                    </a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body"> Sky stream exchange is available to both individuals, companies
+                                    and cooperate organization, Who are interested in earning.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapse3">
+                                        Are there any Commissions upon making transaction on my account?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Sky stream exchange does not take any commissions on your
+                                    transactions. But such commissions can be taken by the payment systems or payment
+                                    aggregator.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapse4">
+                                        How can I Close my Account?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">In case you wish to stop using your account, please contact our
+                                    Clients support department via email</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+
+
+                    </div>
+                    <!-- Panel Group Ends -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Section FAQ Ends -->
+
+    <!-- Pricing Starts -->
+    <section class="pricing">
+        <div class="container">
+            <!-- Section Title Starts -->
+            <div class="row text-center">
+                <h2 class="title-head">Recent <span> Transactions</span></h2>
+                <div class="title-head-subtitle">
+                    <p>Newly recorded transactions on our platform</p>
+                </div>
+            </div>
+            <!-- Section Title Ends -->
+            <!-- Section Content Starts -->
+            <div class="row pricing-tables-content">
+                <div class="pricing-container">
+                    <!-- Pricing Switcher Starts -->
+                    <div class="pricing-switcher">
+                        <p>
+                            <input type="radio" name="switch" value="buy" id="buy-1" checked>
+                            <label for="buy-1">ALL</label>
+                        </p>
+                    </div>
+                    <!-- Pricing Switcher Ends -->
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            font-family: Tahoma, Geneva, sans-serif;
+                        }
+
+                        table td {
+                            padding: 15px;
+                        }
+
+                        table thead td {
+                            background-color: #54585d;
+                            color: #ffffff;
+                            font-weight: bold;
+                            font-size: 13px;
+                            border: 1px solid #54585d;
+                        }
+
+                        table tbody td {
+                            color: #636363;
+                            border: 1px solid #dddfe1;
+                        }
+
+                        table tbody tr {
+                            background-color: #f9fafb;
+                        }
+
+                        table tbody tr:nth-child(odd) {
+                            background-color: #ffffff;
+                        }
+                    </style>
+                    <!-- Pricing Tables Starts -->
+                    <ul class="pricing-list bounce-invert">
+                        <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #1 Starts -->
+                                <li data-type="buy" class="is-visible" align=center>
+                                    <header class="pricing-header">
+                                        <h2>Deposits </h2> <br />
+                                        <table align=center>
+                                            <thead>
+                                                <tr>
+                                                    <td>No.</td>
+                                                    <td>Name</td>
+                                                    <td>Amount</td>
+                                                    <td>Method</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Marina Victoria </td>
+                                                    <td>$500</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Marina Victoria </td>
+                                                    <td>$200</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Marina Victoria </td>
+                                                    <td>$50</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Marina Victoria </td>
+                                                    <td>$50</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Marina Victoria </td>
+                                                    <td>$50</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </header>
+                                </li>
+                                <!-- Buy Pricing Table #1 Ends -->
+
+                            </ul>
+                        </li>
+                        <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <ul class="pricing-wrapper">
+                                <!-- Buy Pricing Table #2 Starts -->
+                                <li data-type="buy" class="is-visible" align=center>
+                                    <header class="pricing-header">
+                                        <h2>Withdrawals </h2> <br />
+                                        <table align=center>
+                                            <thead>
+                                                <tr>
+                                                    <td>No.</td>
+                                                    <td>Name</td>
+                                                    <td>Amount</td>
+                                                    <td>Method</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Emmanuel Pierre</td>
+                                                    <td>$400</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Emmanuel Pierre</td>
+                                                    <td>$950</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>stine Augustine</td>
+                                                    <td>$280</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Flora. S Williams</td>
+                                                    <td>$102</td>
+                                                    <td>USDT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Amelia Julian</td>
+                                                    <td>$600</td>
+                                                    <td>Bitcoin</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </header>
+                                </li>
+                                <!-- Buy Pricing Table #2 Ends -->
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Ends -->
+
+    <!-- Quote and Chart Section Starts -->
+    <section class="image-block2">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Quote Starts -->
+                <div class="col-md-4 img-block-quote bg-image-2">
+                    <blockquote>
+                        <p>Bitcoin is one of the most important inventions in all of human history. For the first time
+                            ever, anyone can send or receive any amount of money with anyone else, anywhere on the
+                            planet, conveniently and without restriction. It’s the dawn of a better, more free world.
+                        </p>
+                        <footer><img src="images/ceo.jpg" alt="ceo" /> <span>Marc Smith</span> - CEO</footer>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Quote and Chart Section Ends -->
+
+    <!-- Call To Action Section Starts -->
+    <section class="call-action-all">
+        <div class="call-action-all-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Call To Action Text Starts -->
+                        <div class="action-text">
+                            <h2>Get Started Today With Sky stream exchange</h2>
+                            <p class="lead">Open account for free to start investing in Crypto!</p>
+                        </div>
+                        <!-- Call To Action Text Ends -->
+                        <!-- Call To Action Button Starts -->
+                        <p class="action-btn"><a class="btn btn-primary" href="{{ route ('register')}}">Register Now</a></p>
+                        <!-- Call To Action Button Ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section Ends -->
 </x-guest-layout>
 {{--  --}}
