@@ -198,9 +198,8 @@
 <html lang="en">
 
 
-<!-- Mirrored from supertrixfx.com/user/signup.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Mar 2023 10:06:35 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
     <!-- Meta tags  -->
@@ -213,10 +212,10 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <!-- CSS Assets -->
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/user/css/app.css" />
 
     <!-- Javascript Assets -->
-    <script src="/js/app.js" defer></script>
+    <script src="/user/js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -255,18 +254,18 @@
         <div class="hidden w-full place-items-center lg:grid">
             <div class="w-full max-w-lg p-6">
                 <img class="w-full" x-show="!$store.global.isDarkModeEnabled"
-                    src="images/illustrations/dashboard-meet.svg" alt="image" />
+                    src="/user/images/illustrations/dashboard-meet.svg" alt="image" />
                 <img class="w-full" x-show="$store.global.isDarkModeEnabled"
-                    src="images/illustrations/dashboard-meet-dark.svg" alt="image" />
+                    src="./user/images/illustrations/dashboard-meet-dark.svg" alt="image" />
             </div>
         </div>
         <main class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md">
             <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
                 <div class="text-center">
-                    <img class="mx-auto h-16 w-16 lg:hidden" src="images/app-logo.svg" alt="logo" />
+                    <img class="mx-auto h-16 w-16 lg:hidden" src="./user/images/app-logo.svg" alt="logo" />
                     <div class="mt-4">
                         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
-                            Welcome To Sky Stream Exchange
+                            Create a free account
                         </h2>
                         <p class="text-slate-400 dark:text-navy-300">
                             Please sign up to continue
@@ -279,9 +278,16 @@
                     <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
                     <p class="text-tiny+ ">Join more than 7,500 Investors!</p>
 
+
                     <div class="h-px flex-1 bg-slate-200 dark:bg-navy-500"></div>
                 </div>
-                <form action="#" method="post">
+                <div>
+                    @foreach ($errors->all() as $err)
+                        <label for="edit page"></label>
+                        <p class="text-danger text-center">{{ $err }}</p>
+                    @endforeach
+                </div>
+                <form action="{{ route('register') }}" method="post">@csrf
                     <div class="mt-2 space-y-4">
 
 
@@ -309,7 +315,7 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="First Name" type="text" name="firstname" required />
+                                        placeholder="First Name" type="text" name="name" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa-regular fa-user text-base"></i>
@@ -322,7 +328,7 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="Last Name" type="text" name="lastname" required />
+                                        placeholder="Last Name" type="text" name="name" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa-regular fa-user text-base"></i>
@@ -346,7 +352,7 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="Email Address" type="text" name="emailadd" required />
+                                        placeholder="Email Address" type="text" name="email" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa-regular fa-envelope text-base"></i>
@@ -659,7 +665,7 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="Mobile Number" type="tel" name="phone" required />
+                                        placeholder="Mobile Number" type="tel" name="number" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa fa-phone"></i>
@@ -692,7 +698,7 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="Password" type="password" name="passw" required />
+                                        placeholder="Password" type="password" name="password" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa fa-lock"></i>
@@ -706,7 +712,8 @@
                                 <span class="relative mt-1.5 flex">
                                     <input
                                         class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                        placeholder="Repeat Password" type="password" name="conpassw" required />
+                                        placeholder="Repeat Password" type="password" name="password_confirmation"
+                                        id="password" required />
                                     <span
                                         class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
                                         <i class="fa fa-lock"></i>
@@ -733,7 +740,7 @@
                         </div>
                         <button
                             class="btn mt-10 h-10 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
-                            type="submit" name="sub-reg">
+                            name="sub-reg">
                             Sign Up
                         </button>
 
@@ -746,7 +753,7 @@
                     <p class="line-clamp-1">
                         <span>Already have an account? </span>
                         <a class="text-primary transition-colors hover:text-primary-focus dark:text-accent-light dark:hover:text-accent"
-                            href="login.html">Sign In</a>
+                            href="{{ route('login') }}">Sign In</a>
                     </p>
                 </div>
             </div>
@@ -763,6 +770,5 @@
     </script>
 </body>
 
-<!-- Mirrored from supertrixfx.com/user/signup.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Mar 2023 10:06:42 GMT -->
 
 </html>

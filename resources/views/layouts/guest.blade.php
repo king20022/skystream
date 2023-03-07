@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>SuperTrix Fx - Home</title>
+    <title>Sky Stream Exchange - Home</title>
     <meta name="viewport" content="width=500" />
 
 
@@ -87,7 +87,7 @@
                     <!-- Logo Starts -->
                     <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
                         <a href="#">
-                            <img id="logo" width="200" src="Sky stream exchange.png" alt="logo">
+                            <img id="logo" width="200" src="logobroker.png" alt="logo">
                         </a>
 
                     </div>
