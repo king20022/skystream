@@ -91,7 +91,7 @@
                     <!-- Logo Starts -->
                     <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
                         <a href="{{ route('welcome') }}">
-                            <img id="logo" width="200" src="logobroker.png" alt="logo">
+                            <img id="logo" width="200" src="logobroker.png" style=" width:50%; " alt="logo">
                         </a>
 
                     </div>
@@ -255,7 +255,7 @@
                             <h4>Our Company</h4>
                             <div class="menu">
                                 <ul>
-                                    <li><a href="{{ route('home')}}">Home</a></li>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Features</a></li>
                                     <li><a href="#">Our Plans</a></li>
