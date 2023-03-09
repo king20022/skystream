@@ -169,6 +169,8 @@ Route::middleware('auth')->group(function () {
 
     // withdraw
     Route::get('/investor/withdraw', [InvestorController::class, 'withdraw'])->name('investor.with');
+
+    Route::get('/investor/withdrawform', [InvestorController::class, 'withdrawform'])->name('investor.form');
 });
 
 require __DIR__ . '/auth.php';

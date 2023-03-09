@@ -18,7 +18,7 @@
                             <h3 class="slide-title"><span>Profitable</span> Crypto <span>Trading </span> Investment
                                 Solutions</h3>
                             <p>
-                                <a href="{{ route ('register')}}" class="slider btn btn-primary">Get Started</a>
+                                <a href="{{ route('register') }}" class="slider btn btn-primary">Get Started</a>
                             </p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 Investments. </p>
                         </div>
                     </div>
-                    <a class="btn btn-primary" href="{{ route ('register')}}">Join us</a>
+                    <a class="btn btn-primary" href="{{ route('register') }}">Join us</a>
                 </div>
                 <!-- Content Ends -->
             </div>
@@ -266,29 +266,32 @@
 
                     <!-- Pricing Tables Starts -->
                     <ul class="pricing-list bounce-invert">
-                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                            <ul class="pricing-wrapper">
-                                <!-- Buy Pricing Table #1 Starts -->
-                                <li data-type="buy" class="is-visible">
-                                    <header class="pricing-header">
-                                        <h2>Starter Plan</h2>
 
-                                        <div class="price">
+                        @foreach ($investment as $investment)
+                            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                <ul class="pricing-wrapper">
+                                    <!-- Buy Pricing Table #1 Starts -->
+                                    <li data-type="buy" class="is-visible">
+                                        <header class="pricing-header">
+                                            <h2>{{ $investment->plan}} Plan</h2>
 
-                                            <span class="value" style="font-size: 30px;">$50 - $3,999</span>
-                                        </div>
-                                        <h2>Profit <span> 6% </span> </h2>
-                                        <h2>Duration <span> 48 Hours</span></h2>
-                                    </header>
-                                    <footer class="pricing-footer">
-                                        <a href="user/signup.html" class="btn btn-primary">Get Started</a>
-                                    </footer>
-                                </li>
-                                <!-- Buy Pricing Table #1 Ends -->
+                                            <div class="price">
 
-                            </ul>
-                        </li>
-                        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <span class="value" style="font-size: 30px;">{{ $investment->amount}}</span>
+                                            </div>
+                                            <h2>Profit <span>{{ $investment->profit}}</span> </h2>
+                                            <h2>Duration <span> {{ $investment->duration}}</span></h2>
+                                        </header>
+                                        <footer class="pricing-footer">
+                                            <a href="{{ route ('register')}}" class="btn btn-primary">Get Started</a>
+                                        </footer>
+                                    </li>
+                                    <!-- Buy Pricing Table #1 Ends -->
+
+                                </ul>
+                            </li>
+                        @endforeach
+                        {{-- <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                             <ul class="pricing-wrapper">
                                 <!-- Buy Pricing Table #2 Starts -->
                                 <li data-type="buy" class="is-visible">
@@ -354,7 +357,7 @@
                                 <!-- Buy Pricing Table #3 Ends -->
 
                             </ul>
-                        </li>
+                        </li> --}}
 
                     </ul>
                 </div>
@@ -565,14 +568,16 @@
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
                                         href="#collapse2">
-                                        Is Sky stream exchange financial investment platform availability for the public?
+                                        Is Sky stream exchange financial investment platform availability for the
+                                        public?
                                     </a>
                                 </h4>
                             </div>
                             <!-- Panel Heading Ends -->
                             <!-- Panel Content Starts -->
                             <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body"> Sky stream exchange is available to both individuals, companies
+                                <div class="panel-body"> Sky stream exchange is available to both individuals,
+                                    companies
                                     and cooperate organization, Who are interested in earning.</div>
                             </div>
                             <!-- Panel Content Starts -->
@@ -833,7 +838,8 @@
                         </div>
                         <!-- Call To Action Text Ends -->
                         <!-- Call To Action Button Starts -->
-                        <p class="action-btn"><a class="btn btn-primary" href="{{ route ('register')}}">Register Now</a></p>
+                        <p class="action-btn"><a class="btn btn-primary" href="{{ route('register') }}">Register
+                                Now</a></p>
                         <!-- Call To Action Button Ends -->
                     </div>
                 </div>

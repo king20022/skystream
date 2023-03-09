@@ -132,12 +132,10 @@ class AdminController extends Controller
     public function updateinvestment(Request $request)
     {
         $investment = new Investment;
-        $investment->investmentType= $request->investmentType;
-        $investment->minimum = $request->minimum;
-        $investment->maximum = $request->maximum;
-        $investment->pip = $request->pip;
-        $investment->pip = $request->pip;
-        $investment->investmentPlan = $request->investmentPlan;
+        $investment->plan= $request->plan;
+        $investment->amount = $request->amount;
+        $investment->profit = $request->profit;
+        $investment->duration = $request->duration;
         $investment->save();
 
 

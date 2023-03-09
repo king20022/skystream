@@ -53,7 +53,16 @@ class InvestorController extends Controller
     public function withdraw()
     {
         $user = auth()->user();
-        return view('investor.withdraw', ['user' => $user]);
+        return view('Investor.withdraw', ['user' => $user]);
         // return view('Investor.withdraw');
     }
+
+
+    public function withdrawform()
+    {
+
+        return view('Investor.withdrawform');
+    }
+
+
 }

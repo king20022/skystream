@@ -33,9 +33,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tende</title>
+    <title>Sky Stream Exchange</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logoi.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="logobroker.png" />
     <!-- Custom Stylesheet -->
 
     <link rel="stylesheet" href="/email/css/style.css" />
@@ -54,8 +54,14 @@
             <div class="row justify-content-center h-100 align-items-center">
                 <div class="col-xl-4 col-md-5">
                     <div class="mini-logo text-center my-3">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <a href="{{ route ('welcome')}}"><img src="logobroker.png" alt=""></a>
                         <h4 class="card-title mt-5">Reset Password</h4>
+                    </div>
+                    <div>
+                        @foreach ($errors->all() as $err)
+                            <label for="edit page"></label>
+                            <p class="text-danger text-center">{{ $err }}</p>
+                        @endforeach
                     </div>
                     <div class="auth-form card">
                         <div class="card-body">
@@ -63,7 +69,7 @@
                                 <div class="col-12">
                                     <label class="form-label">Email</label>
 
-                                    <input type="text" class="form-control" name="email" id="email"  :value="old('email')" required autofocus  placeholder="***********">
+                                    <input  class="form-control" type="email" name="email" id="email"  :value="old('email')" required autofocus  placeholder="***********">
                                 </div>
                                 <div class="text-center mt-4">
                                     <button  class="btn btn-primary btn-block">Submit</button>

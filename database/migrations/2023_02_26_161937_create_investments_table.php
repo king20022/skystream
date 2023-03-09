@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('investments', function (Blueprint $table) {
             $table->id();
-            $table->string('investmentType')->nullable;
-            $table->string('minimum')->nullable;
-            $table->string('maximum')->nullable;
-            $table->string('pip')->nullable;
-            $table->string('investmentPlan')->nullable;
+            $table->string('plan')->nullable;
+            $table->string('amount')->nullable;
+            $table->string('profit')->nullable;
+            $table->string('duration')->nullable;
             $table->timestamps();
         });
     }

@@ -209,7 +209,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
     <title>Sky Stream- Exchange</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="logobroker.png" />
 
     <!-- CSS Assets -->
     <link rel="stylesheet" href="/user/css/app.css" />
@@ -244,8 +244,8 @@
     <!-- Page Wrapper -->
     <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
         <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
-            <a href="#" class="flex items-center space-x-2">
-                <img src="../supertrixfx.png" alt="logo" width='10%;' />
+            <a href="{{ route ('welcome')}}" class="flex items-center space-x-2">
+                <img src="logobroker.png" sizes=""  alt="logo" width='10%;' />
                 <p class="text-xl font-semibold  text-slate-700 dark:text-navy-100">
 
                 </p>
@@ -262,7 +262,7 @@
         <main class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md">
             <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
                 <div class="text-center">
-                    <img class="mx-auto h-16 w-16 lg:hidden" src="./user/images/app-logo.svg" alt="logo" />
+                    <img class="mx-auto h-16 w-16 lg:hidden" src="logobroker.png" alt="logo" />
                     <div class="mt-4">
                         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
                             Create a free account

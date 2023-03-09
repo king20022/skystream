@@ -29,16 +29,16 @@
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="investmentType"
-                                                    placeholder="investmentType">
+                                                <input type="text" class="form-control" name="plan"
+                                                    placeholder="plan">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="minimum"
-                                                    placeholder="minimum">
+                                                <input type="text" class="form-control" name="amount"
+                                                    placeholder="amount">
                                             </div>
                                         </div>
                                     </div>
@@ -47,21 +47,21 @@
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="maximum"
-                                                    placeholder="maximum">
+                                                <input type="text" class="form-control" name="profit"
+                                                    placeholder="profit">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="investmentPlan"
-                                                    placeholder="investmentPlan">
+                                                <input type="text" class="form-control" name="duration"
+                                                    placeholder="duration">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row clearfix">
+                                {{-- <div class="row clearfix">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group">
                                             <div class="form-line">
@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
 
-                                </div>
+                                </div> --}}
                                 <div class="col-sm-12">
                                     <button class="btn btn-raised g-bg-blush2"> add Investment</button>
                                 </div>

@@ -40,6 +40,8 @@
 
     <script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
     </script>
+    <style>
+    </style>
 
 
 
@@ -47,7 +49,8 @@
 
 <body>
     <!-- SVG Preloader Starts -->
-    <div id="preloader">
+
+    {{-- <div id="preloader">
         <div id="preloader-content">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px"
@@ -74,8 +77,9 @@
                     C327.767,212.14,389.234,221.02,379.302,260.846z" />
             </svg>
         </div>
-    </div>
+    </div> --}}
     <!-- SVG Preloader Ends -->
+
 
     <!-- Live Style Switcher Ends - demo only -->
     <!-- Wrapper Starts -->
@@ -86,7 +90,7 @@
                 <div class="row">
                     <!-- Logo Starts -->
                     <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
-                        <a href="#">
+                        <a href="{{ route('welcome') }}">
                             <img id="logo" width="200" src="logobroker.png" alt="logo">
                         </a>
 
@@ -192,7 +196,7 @@
                             <div class="collapse navbar-collapse navbar-responsive-collapse">
                                 <!-- Main Menu Starts -->
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="{{ route ('home') }}">Home</a></li>
+                                    <li class="active"><a href="{{ route('home') }}">Home</a></li>
                                     <li><a href="#aboutus">About Us</a></li>
                                     <li><a href="#features">Features</a></li>
                                     <li><a href="#plans">Our Plans</a></li>
@@ -251,7 +255,7 @@
                             <h4>Our Company</h4>
                             <div class="menu">
                                 <ul>
-                                    <li><a href="i.html">Home</a></li>
+                                    <li><a href="{{ route('home')}}">Home</a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Features</a></li>
                                     <li><a href="#">Our Plans</a></li>
@@ -352,6 +356,7 @@
 
         <!-- Live Style Switcher JS File - only demo -->
         <script src="/js/styleswitcher.js"></script>
+        <script src="//code.tidio.co/siunvhzub3nu1lfoiiehhobczd0qjl7z.js" async></script>
 
 
         <!-- Begin of Chaport Live Chat code --
