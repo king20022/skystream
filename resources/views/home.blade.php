@@ -103,7 +103,8 @@
             <div class="row text-center">
                 <h2 class="title-head">About <span>Us</span></h2>
                 <div class="title-head-subtitle">
-                    <p>SuperTrix Fx is an Online Digital trading platform, where companies, individuals and firms are
+                    <p> Sky stream exchange is an Online Digital trading platform, where companies, individuals and
+                        firms are
                         given the opportunity to earn from Crypto trading & forex Exchange, by investing their capital
                         through cryptocurrency, which will be used to start up a trading section for you.</p>
                 </div>
@@ -236,10 +237,13 @@
                 </div>
                 <!-- Features Ends -->
                 <!-- Video Starts -->
-                <div class="col-md-4 ts-padding bg-image-1">
+                <div class="col-md-4 ts-padding ">
                     <div>
                         <div class="text-center">
-                            <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a>
+
+                            <img src="certificate.png" height="500px" alt="">
+
+                            {{-- <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a> --}}
                         </div>
                     </div>
                 </div>
@@ -377,8 +381,10 @@
                     </p>
                 </div>
                 <!-- Section Heading Ends -->
+
                 <!-- Bitcoin Calculator Form Starts -->
-                <div class="col-md-12 text-center">
+
+                {{-- <div class="col-md-12 text-center">
                     <form class="bitcoin-calculator" id="bitcoin-calculator">
                         <!-- Input #1 Starts -->
                         <input class="form-input" name="btc-calculator-value" value="1">
@@ -396,15 +402,18 @@
                         <!-- Select Currency Ends -->
                     </form>
                     <p class="info"><i>* Data updated every 15 minutes</i></p>
-                </div>
+                </div> --}}
                 <!-- Bitcoin Calculator Form Ends -->
             </div>
         </div>
     </section>
+    <section class="">
+
+    </section>
     <!-- Bitcoin Calculator Section Ends -->
 
     <!-- Team Section Starts -->
-    <section class="team">
+    {{-- <section class="team">
         <div class="container">
             <!-- Section Title Starts -->
             <div class="row text-center">
@@ -525,7 +534,7 @@
             </div>
             <!-- Team Members Ends -->
         </div>
-    </section>
+    </section> --}}
     <!-- Team Section Ends -->
 
 
@@ -635,7 +644,7 @@
     <!-- Section FAQ Ends -->
 
     <!-- Pricing Starts -->
-    <section class="pricing">
+    {{-- <section class="pricing">
         <div class="container">
             <!-- Section Title Starts -->
             <div class="row text-center">
@@ -803,7 +812,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Pricing Ends -->
 
     <!-- Quote and Chart Section Starts -->
@@ -848,7 +857,6 @@
         </div>
     </section>
     <!-- Call To Action Section Ends -->
-</x-guest-layout>
-{{--  --}}
 
+</x-guest-layout>
 {{--  --}}

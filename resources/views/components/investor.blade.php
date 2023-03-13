@@ -396,6 +396,13 @@
                             <li><a href="courses-info.html">Courses Info</a></li>
                         </ul> --}}
                     </li>
+                    <li><a href="{{ route('logout') }}" class=""><i class="zmdi zmdi-book zmdi zmdi-account"></i><span>Swap</span>
+                        </a>
+                        {{-- <ul class="ml-menu">
+                            <li><a href="library.html">All Library</a></li>
+                            <li><a href="add-library.html">Add Library</a></li>
+                        </ul> --}}
+                    </li>
                     <li><a href="{{ route('logout') }}" class=""><i class="zmdi zmdi-book  zmdi zmdi-sign-in"></i><span>Logout</span>
                         </a>
                         {{-- <ul class="ml-menu">

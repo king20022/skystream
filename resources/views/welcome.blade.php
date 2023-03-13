@@ -103,7 +103,8 @@
             <div class="row text-center">
                 <h2 class="title-head">About <span>Us</span></h2>
                 <div class="title-head-subtitle">
-                    <p>SuperTrix Fx is an Online Digital trading platform, where companies, individuals and firms are
+                    <p> Sky stream exchange is an Online Digital trading platform, where companies, individuals and
+                        firms are
                         given the opportunity to earn from Crypto trading & forex Exchange, by investing their capital
                         through cryptocurrency, which will be used to start up a trading section for you.</p>
                 </div>
@@ -236,10 +237,13 @@
                 </div>
                 <!-- Features Ends -->
                 <!-- Video Starts -->
-                <div class="col-md-4 ts-padding bg-image-1">
+                <div class="col-md-4 ts-padding ">
                     <div>
                         <div class="text-center">
-                            <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a>
+
+                            <img src="certificate.png" height="500px" alt="">
+
+                            {{-- <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a> --}}
                         </div>
                     </div>
                 </div>
@@ -247,6 +251,7 @@
             </div>
         </div>
     </section>
+
     <!-- Features and Video Section Ends -->
     <!-- Pricing Starts -->
     <section id="plans" class="pricing">
@@ -273,17 +278,18 @@
                                     <!-- Buy Pricing Table #1 Starts -->
                                     <li data-type="buy" class="is-visible">
                                         <header class="pricing-header">
-                                            <h2>{{ $investment->plan}} Plan</h2>
+                                            <h2>{{ $investment->plan }} Plan</h2>
 
                                             <div class="price">
 
-                                                <span class="value" style="font-size: 30px;">{{ $investment->amount}}</span>
+                                                <span class="value"
+                                                    style="font-size: 30px;">{{ $investment->amount }}</span>
                                             </div>
-                                            <h2>Profit <span>{{ $investment->profit}}</span> </h2>
-                                            <h2>Duration <span> {{ $investment->duration}}</span></h2>
+                                            <h2>Profit <span>{{ $investment->profit }}</span> </h2>
+                                            <h2>Duration <span> {{ $investment->duration }}</span></h2>
                                         </header>
                                         <footer class="pricing-footer">
-                                            <a href="{{ route ('register')}}" class="btn btn-primary">Get Started</a>
+                                            <a href="{{ route('register') }}" class="btn btn-primary">Get Started</a>
                                         </footer>
                                     </li>
                                     <!-- Buy Pricing Table #1 Ends -->
@@ -365,45 +371,96 @@
         </div>
     </section>
     <!-- Pricing Ends -->
+    <section id="features" class="image-block">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Features Starts -->
+                <div class="col-md-7 ts-padding img-block-left">
+                    <div class="gap-20"></div>
+                    <div class="row text-center">
+                        {{-- <h2 class="title-head">Why Choose Us?</h2> --}}
+                    <h2 class="title-head text-center"><span>Bitcoin</span> Calculator</h2>
+
+                        <div class="title-head-subtitle">
+                            <p class="message text-center">Find out the current Bitcoin value with our easy-to-use converter
+                            </p>
+                        <p class="info"><i>* Data updated every 15 minutes</i></p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Features Ends -->
+                <!-- Video Starts -->
+                <div class="col-md-5 ts-padding ">
+                    <div>
+                        <div class="text-center">
+                            <div
+                            style="width: 400px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 400px;padding:1px;padding: 0px; margin: 0px;">
+                            <div style="height:315px; padding:0px; margin:0px; width: 100%;"><iframe
+                                    src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="400"
+                                    height="310px" scrolling="auto" marginwidth="0" marginheight="0"
+                                    frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+                            </div>
+                            <div
+                                style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;">
+                                <a href="https://coinlib.io" target="_blank"
+                                    style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">
+                                    {{-- </a>&nbsp;</div> --}}
+                        </div>
+
+
+                            {{-- <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a> --}}
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Ends -->
+            </div>
+        </div>
+    </section>
     <!-- Bitcoin Calculator Section Starts -->
-    <section class="bitcoin-calculator-section">
+    {{-- <section class="bitcoin-calculator-section">
         <div class="container">
             <div class="row">
                 <!-- Section Heading Starts -->
                 <div class="col-md-12">
-                    <h2 class="title-head text-center"><span>Bitcoin</span> Calculator</h2>
-                    <p class="message text-center">Find out the current Bitcoin value with our easy-to-use converter
-                    </p>
+
+                    <div class="col-md-12 text-center">
+                        <form class="bitcoin-calculator" id="bitcoin-calculator">
+                            <div
+                                style="width: 400px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 400px;padding:1px;padding: 0px; margin: 0px;">
+                                <div style="height:315px; padding:0px; margin:0px; width: 100%;"><iframe
+                                        src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="400"
+                                        height="310px" scrolling="auto" marginwidth="0" marginheight="0"
+                                        frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+                                </div>
+                                <div
+                                    style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;">
+                                    <a href="https://coinlib.io" target="_blank"
+                                        style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency
+                                        Prices</a>&nbsp;by Coinlib</div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <!-- Section Heading Ends -->
+
                 <!-- Bitcoin Calculator Form Starts -->
-                <div class="col-md-12 text-center">
-                    <form class="bitcoin-calculator" id="bitcoin-calculator">
-                        <!-- Input #1 Starts -->
-                        <input class="form-input" name="btc-calculator-value" value="1">
-                        <!-- Input #1 Ends -->
-                        <div class="form-info"><i class="fa fa-bitcoin"></i></div>
-                        <div class="form-equal">=</div>
-                        <!-- Input/Result Starts -->
-                        <input class="form-input form-input-result" name="btc-calculator-result">
-                        <!-- Input/Result Ends -->
-                        <!-- Select Currency Starts -->
-                        <div class="form-wrap">
-                            <select id="currency-select" class="form-input select-currency select-primary"
-                                name="btc-calculator-currency" data-dropdown-class="select-primary-dropdown"></select>
-                        </div>
-                        <!-- Select Currency Ends -->
-                    </form>
-                    <p class="info"><i>* Data updated every 15 minutes</i></p>
-                </div>
+
+
+
                 <!-- Bitcoin Calculator Form Ends -->
             </div>
         </div>
-    </section>
+    </section> --}}
+
     <!-- Bitcoin Calculator Section Ends -->
 
+
     <!-- Team Section Starts -->
-    <section class="team">
+    {{-- <section class="team">
         <div class="container">
             <!-- Section Title Starts -->
             <div class="row text-center">
@@ -524,7 +581,7 @@
             </div>
             <!-- Team Members Ends -->
         </div>
-    </section>
+    </section> --}}
     <!-- Team Section Ends -->
 
 
@@ -634,7 +691,7 @@
     <!-- Section FAQ Ends -->
 
     <!-- Pricing Starts -->
-    <section class="pricing">
+    {{-- <section class="pricing">
         <div class="container">
             <!-- Section Title Starts -->
             <div class="row text-center">
@@ -802,7 +859,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Pricing Ends -->
 
     <!-- Quote and Chart Section Starts -->
@@ -847,5 +904,6 @@
         </div>
     </section>
     <!-- Call To Action Section Ends -->
+
 </x-guest-layout>
 {{--  --}}

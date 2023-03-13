@@ -244,8 +244,8 @@
     <!-- Page Wrapper -->
     <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
         <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
-            <a href="{{ route ('welcome')}}" class="flex items-center space-x-2">
-                <img src="logobroker.png" sizes=""  alt="logo" width='10%;' />
+            <a href="{{ route('welcome') }}" class="flex items-center space-x-2">
+                <img src="logobroker.png" sizes="" alt="logo" width='10%;' />
                 <p class="text-xl font-semibold  text-slate-700 dark:text-navy-100">
 
                 </p>
@@ -296,9 +296,6 @@
 
 
 
-                        <input
-                            class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                            placeholder="Referral" type="text" name="referer" hidden />
 
 
 
@@ -306,7 +303,7 @@
 
 
 
-                        <div class="grid grid-cols-2 gap-4">
+                        {{-- <div class="grid grid-cols-2 gap-4">
 
 
 
@@ -335,6 +332,31 @@
                                     </span>
                                 </span>
                             </label>
+
+
+
+
+
+                        </div> --}}
+                        <div class="grid grid-cols-1 gap-4">
+
+
+
+                            <label class="block">
+                                <span></span>
+                                <span class="relative mt-1.5 flex">
+                                    <input
+                                        class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+                                        placeholder=" Name" type="text" name="name" required />
+                                    <span
+                                        class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
+                                        <i class="fa-regular fa-user text-base"></i>
+                                    </span>
+                                </span>
+
+
+                            </label>
+
 
 
 

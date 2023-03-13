@@ -229,7 +229,7 @@
     <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
         <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
             <a href="#" class="flex items-center space-x-2">
-                <img src="../supertrixfx.png" alt="logo" width='10%;' />
+                <img src="logobroker.png" alt="logo" width='30%;' />
                 <p class="text-xl font-semibold  text-slate-700 dark:text-navy-100">
 
                 </p>
