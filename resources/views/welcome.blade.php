@@ -379,12 +379,13 @@
                     <div class="gap-20"></div>
                     <div class="row text-center">
                         {{-- <h2 class="title-head">Why Choose Us?</h2> --}}
-                    <h2 class="title-head text-center"><span>Bitcoin</span> Calculator</h2>
+                        <h2 class="title-head text-center"><span>Bitcoin</span> Calculator</h2>
 
                         <div class="title-head-subtitle">
-                            <p class="message text-center">Find out the current Bitcoin value with our easy-to-use converter
+                            <p class="message text-center">Find out the current Bitcoin value with our easy-to-use
+                                converter
                             </p>
-                        <p class="info"><i>* Data updated every 15 minutes</i></p>
+                            <p class="info"><i>* Data updated every 15 minutes</i></p>
 
                         </div>
                     </div>
@@ -398,27 +399,28 @@
                     <div>
                         <div class="text-center">
                             <div
-                            style="width: 400px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 400px;padding:1px;padding: 0px; margin: 0px;">
-                            <div style="height:315px; padding:0px; margin:0px; width: 100%;"><iframe
-                                    src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="400"
-                                    height="310px" scrolling="auto" marginwidth="0" marginheight="0"
-                                    frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+                                style="width: 400px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 400px;padding:1px;padding: 0px; margin: 0px;">
+                                <div style="height:315px; padding:0px; margin:0px; width: 100%;"><iframe
+                                        src="https://widget.coinlib.io/widget?type=converter&theme=dark"
+                                        width="400" height="310px" scrolling="auto" marginwidth="0"
+                                        marginheight="0" frameborder="0" border="0"
+                                        style="border:0;margin:0;padding:0;"></iframe>
+                                </div>
+                                <div
+                                    style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;">
+                                    <a href="https://coinlib.io" target="_blank"
+                                        style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">
+                                        {{-- </a>&nbsp;</div> --}}
+                                </div>
+
+
+                                {{-- <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a> --}}
                             </div>
-                            <div
-                                style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;">
-                                <a href="https://coinlib.io" target="_blank"
-                                    style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">
-                                    {{-- </a>&nbsp;</div> --}}
-                        </div>
-
-
-                            {{-- <a class="button-video mfp-youtube" href="Sky stream exchange.mp4"></a> --}}
                         </div>
                     </div>
+                    <!-- Video Ends -->
                 </div>
-                <!-- Video Ends -->
             </div>
-        </div>
     </section>
     <!-- Bitcoin Calculator Section Starts -->
     {{-- <section class="bitcoin-calculator-section">
