@@ -296,11 +296,12 @@
 
 <head>
      <!-- Favicon -->
-     <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>:: Exquisitecryptoventures | Platform for Virtual Currencies That Is Straightforward, Secure, and Reliable
+    <title>:: Sky Stream Exchange | Platform for Virtual Currencies That Is Straightforward, Secure, and Reliable
     </title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/asset/plugins/bootstrap/css/bootstrap.min.css" />
@@ -309,6 +310,7 @@
     <link rel="stylesheet" href="/asset/css/main.css">
 
     <link rel="stylesheet" href="/asset/css/themes/all-themes.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="theme-blush">
@@ -421,7 +423,7 @@
     <nav class="navbar clearHeader">
         <div class="col-12">
             <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand"
-                    href="#"> Exquisite</a> </div>
+                    href="#"> Sky Stream</a> </div>
 
         </div>
     </nav>
@@ -763,5 +765,13 @@
 
 
     <!--Side menu and right menu -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#input1').on('input', function(){
+				var inputValue = $(this).val();
+				$('#input2').val(inputValue);
+			});
+		});
+	</script>
 
 </html>

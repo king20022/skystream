@@ -170,7 +170,30 @@ Route::middleware('auth')->group(function () {
     // withdraw
     Route::get('/investor/withdraw', [InvestorController::class, 'withdraw'])->name('investor.with');
 
-    Route::get('/investor/withdrawform', [InvestorController::class, 'withdrawform'])->name('investor.form');
+    Route::get('/investor/withdrawform', [InvestorController::class, 'withdrawform'])->name('investor.formm');
+
+
+    // display withdraw message
+    Route::get('/investor/message', [InvestorController::class, 'message'])->name('investor.message');
+
+
+
+    // swap area form
+    Route::get('/investor/form', [InvestorController::class, 'form'])->name('investor.form');
+
+    // store coin name first
+    Route::POST('/coinstore', [InvestorController::class, 'storecoin'])->name('investor.store');
+
+
+
+
+
+     // swap area
+    Route::get('/investor/withdrawswap', [InvestorController::class, 'swap'])->name('investor.swap');
+
+
+    Route::post('/investor/cornswap', [InvestorController::class, 'exchange'])->name('investor.exchange');
+
 });
 
 require __DIR__ . '/auth.php';

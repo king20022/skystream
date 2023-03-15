@@ -355,9 +355,8 @@
                     <ul>
 
                         <li><a data-placement="bottom" title="Go to Profile" href="{{ route('investor.update') }}"><i
-                                    class="zmdi zmdi-account"></i></a></li>
-                        <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i
-                                    class="zmdi zmdi-settings"></i></a></li>
+                                    class="zmdi zmdi-account col-green"></i></a></li>
+
                         <li><a data-placement="bottom" title="logout" href="{{ route('logout') }}"><i
                                     class="zmdi zmdi-sign-in"></i></a></li>
                     </ul>
@@ -372,7 +371,7 @@
                                 class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
 
                     <li><a href="{{ route('investor.update') }}" class=""><i
-                                class="zmdi zmdi-account"></i><span>Profile</span> </a>
+                                class="zmdi zmdi-account col-green"></i><span>Profile</span> </a>
                         {{-- <ul class="ml-menu">
                             <li><a href="professors.html">All Professors</a></li>
                             <li><a href="add-professors.html">Add professors</a></li>
@@ -380,7 +379,7 @@
                         </ul> --}}
                     </li>
                     <li><a href="{{ route('investor.reveal') }}" class=""><i
-                                class="zmdi zmdi-accounts-outline"></i><span>Deposit</span> </a>
+                                class="zmdi zmdi-accounts-outline col-yellow"></i><span>Deposit</span> </a>
                         {{-- <ul class="ml-menu">
                             <li><a href="students.html">All Students</a></li>
                             <li><a href="add-students.html">Add Students</a></li>
@@ -389,14 +388,14 @@
                         </ul> --}}
                     </li>
                     <li><a href="{{ route('investor.with') }}" class=""><i
-                                class="zmdi zmdi-graduation-cap zmdi zmdi-accounts-outline"></i><span>Withdrawal</span> </a>
+                                class="zmdi zmdi-graduation-cap zmdi zmdi-accounts-outline col-blue"></i><span>Withdrawal</span> </a>
                         {{-- <ul class="ml-menu">
                             <li><a href="courses.html">All Courses</a></li>
                             <li><a href="add-courses.html">Add Courses</a></li>
                             <li><a href="courses-info.html">Courses Info</a></li>
                         </ul> --}}
                     </li>
-                    <li><a href="{{ route('logout') }}" class=""><i class="zmdi zmdi-book zmdi zmdi-account"></i><span>Swap</span>
+                    <li><a href="{{ route('investor.form') }}" class=""><i class=" zmdi zmdi-chart-donut col-red"></i><span>Swap</span>
                         </a>
                         {{-- <ul class="ml-menu">
                             <li><a href="library.html">All Library</a></li>

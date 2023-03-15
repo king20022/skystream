@@ -11,7 +11,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="header">
-                            <h2> Update your Profile <small></small> </h2>
+                            <h2>Your Profile <small></small> </h2>
                         </div>
 
                         {{-- <form action="{{route('investor.updated', $user->id) }}}} " method="POST">

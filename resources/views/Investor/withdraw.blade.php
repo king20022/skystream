@@ -3,15 +3,16 @@
     <!-- main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
+            {{-- <div class="block-header">
                 <div class="d-sm-flex justify-content-between">
 
                     <div>
-                    <a href="{{ route ('investor.coin')}}" class="btn btn-raised btn-primary">Withdraw</a>
+                    <a href="{{ route ('investor.formm')}}" class="btn btn-raised btn-primary">Proceed</a>
                     </div>
 
                 </div>
-            </div>
+            </div> --}}
+
             <div class="row clearfix">
 
 
@@ -36,8 +37,54 @@
 
 
             </div>
+            <div class="header">
+                <h5> Your withdrawal Details <small></small> </h5>
+            </div>
+            <div class="body">
+                <div class="row clearfix">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="form-control" required name="name"
+                                    value="" placeholder="name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="datepicker form-control" required name="Network"
+                                    value="" placeholder="Network">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="datepicker form-control" required name="address"
+                                    value="" placeholder="address">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+        <div class="block-header">
+            <div class="d-sm-flex justify-content-between">
+
+                <div>
+                <a href="{{ route ('investor.formm')}}" class="btn btn-raised btn-primary">Proceed</a>
+                </div>
+
+            </div>
+        </div>
+
     </section>
+
     <!-- main content -->
 
 </x-app-layout>
