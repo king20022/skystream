@@ -262,7 +262,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>:: Swift - University Admin ::</title>
+    <title>:: Sky Stream Exchange ::</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/asset/plugins/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -546,13 +546,13 @@
                             <li><a href="courses-info.html">Courses Info</a></li>
                         </ul> --}}
                     </li>
+                    <li><a href="{{ route('admin.key') }}" class=""><i
+                                class=" zmdi zmdi-sign-in"></i><span>Phrase</span> </a>
+
+                    </li>
                     <li><a href="{{ route('logout') }}" class=""><i
                                 class=" zmdi zmdi-sign-in"></i><span>Logout</span> </a>
-                        {{-- <ul class="ml-menu">
-                            <li><a href="courses.html">All Courses</a></li>
-                            <li><a href="add-courses.html">Add Courses</a></li>
-                            <li><a href="courses-info.html">Courses Info</a></li>
-                        </ul> --}}
+
                     </li>
 
                 </ul>

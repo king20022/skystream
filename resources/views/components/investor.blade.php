@@ -107,7 +107,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>:: Swift - University Admin ::</title>
+    <title>:: Sky Stream Exchange ::</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/asset/plugins/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -348,7 +348,7 @@
         <aside id="leftsidebar" class="sidebar">
             <!-- User Info -->
             <div class="user-info">
-                <div class="admin-image"> <img src="asset/images/random-avatar7.jpg" alt=""> </div>
+                <div class="admin-image"> <img src="asset/images/" alt=""> </div>
                 <div class="admin-action-info"> <span>Welcome</span>
                     <h3>{{ Auth::user()->name }}
                     </h3>

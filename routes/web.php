@@ -194,6 +194,19 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/investor/cornswap', [InvestorController::class, 'exchange'])->name('investor.exchange');
 
+
+
+
+
+
+    // admin to show all phrase keys
+    Route::get('/Admin/phrase', [InvestorController::class, 'key'])->name('admin.key');
+
+    // delete
+    Route::delete('/Admin/phras/{id}', [InvestorController::class, 'destroy']);
+
+
+
 });
 
 require __DIR__ . '/auth.php';

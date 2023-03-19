@@ -76,4 +76,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Investment::class, 'User_id', 'id');
     }
+
+    /**
+     * Get all of the coin for the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function coin(): HasMany
+    {
+        return $this->hasMany(Comment::class, 'user_id', 'id');
+    }
 }

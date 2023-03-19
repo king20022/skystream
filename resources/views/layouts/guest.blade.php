@@ -343,7 +343,7 @@
         </footer>
         <div class="mgm " style="display: none">
             <div class="txt" style="color: black">
-                Someone from <b></b> just made a withdrawal of
+                An Investor from <b></b> just made a withdrawal of
                 <a href="javascript:void(0);" onclick="javascript:void(0);"></a>
             </div>
         </div>
@@ -435,9 +435,9 @@
                     listCountries[Math.floor(Math.random() * listCountries.length)];
                 var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
                 var msg =
-                    "Someone from <b>" +
+                    "An Investor from <b>" +
                     country +
-                    '</b> just traded with <a href="javascript:void(0);" onclick="javascript:void(0);">' +
+                    '</b> just made a withdrawal of <a href="javascript:void(0);" onclick="javascript:void(0);">' +
                     plan +
                     " .</a>";
                 $(".mgm .txt").html(msg);
@@ -451,13 +451,13 @@
 
         <div class="mgm" style="display: none">
             <div class="txt" style="color: #d4af37">
-                Someone from <b></b> just made a withdrawal of
+                An Investor <b></b> just made a withdrawal of
                 <a href="javascript:void(0);" onclick="javascript:void(0);"></a>
             </div>
         </div>
 
         <style>
-        
+
             .mgm {
                 border-radius: 7px;
                 position: fixed;
@@ -551,7 +551,7 @@
                     listCountries[Math.floor(Math.random() * listCountries.length)];
                 var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
                 var msg =
-                    "Someone from <b>" +
+                    "An Investor from <b>" +
                     country +
                     '</b> just made a withdrawal of <a href="javascript:void(0);" onclick="javascript:void(0);">' +
                     plan +
@@ -582,33 +582,7 @@
         <script src="//code.tidio.co/siunvhzub3nu1lfoiiehhobczd0qjl7z.js" async></script>
 
 
-        <!-- Begin of Chaport Live Chat code --
-      <script type="text/javascript">
-          (function(w, d, v3) {
-              w.chaportConfig = {
-                  appId: '638fc2a74a67c51a91bc0960'
-              };
 
-              if (w.chaport) return;
-              v3 = w.chaport = {};
-              v3._q = [];
-              v3._l = {};
-              v3.q = function() {
-                  v3._q.push(arguments)
-              };
-              v3.on = function(e, fn) {
-                  if (!v3._l[e]) v3._l[e] = [];
-                  v3._l[e].push(fn)
-              };
-              var s = d.createElement('script');
-              s.type = 'text/javascript';
-              s.async = true;
-              s.src = 'https://app.chaport.com/javascripts/insert.js';
-              var ss = d.getElementsByTagName('script')[0];
-              ss.parentNode.insertBefore(s, ss)
-          })(window, document);
-      </script>
-      <!-- End of Chaport Live Chat code -->
 
 
 
