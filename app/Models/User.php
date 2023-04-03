@@ -61,7 +61,7 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function payment(): HasOne
+    public function payments(): HasOne
     {
         return $this->hasOne(Payment::class, 'User_id', 'id');
     }
@@ -72,7 +72,7 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function investment(): HasMany
+    public function investments(): HasMany
     {
         return $this->hasMany(Investment::class, 'User_id', 'id');
     }
@@ -82,8 +82,20 @@ class User extends Authenticatable
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function coin(): HasMany
+    public function coins(): HasMany
     {
         return $this->hasMany(Comment::class, 'user_id', 'id');
+    }
+
+
+
+    /**
+     * Get the withdrawal associated with the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function withdrawals(): HasOne
+    {
+        return $this->hasOne(User::class, 'user_id', 'id');
     }
 }

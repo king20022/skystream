@@ -547,7 +547,11 @@
                         </ul> --}}
                     </li>
                     <li><a href="{{ route('admin.key') }}" class=""><i
-                                class=" zmdi zmdi-sign-in"></i><span>Phrase</span> </a>
+                                class=" zmdi zmdi-sign-in zmdi zmdi-swap-alt"></i><span>Phrase</span> </a>
+
+                    </li>
+                    <li><a href="{{ route ('admin.payment')}}" class=""><i
+                                class=" zmdi zmdi-sign-in zmdi zmdi-mood"></i><span>Withdrawals</span> </a>
 
                     </li>
                     <li><a href="{{ route('logout') }}" class=""><i

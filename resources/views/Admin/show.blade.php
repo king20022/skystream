@@ -34,7 +34,7 @@
                                                 <td>
                                                     <form action="/Admin/phras/{{ $coin->id }}" method="POST">@csrf
                                                         @method('DELETE')
-                                                        <button class="btn bg-danger btn-raised m-0">delete</button>
+                                                        <button class="btn bg-danger btn-raised m-0 p-1">delete</button>
                                                     </form>
                                                      </td>
 

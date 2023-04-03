@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Investment;
 use App\Models\Payment;
 use App\Models\User;
+use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -102,8 +103,7 @@ class AdminController extends Controller
         $payment->network = $request->input('network');
         $payment->name = $request->input('name');
         $payment->address = $request->input('address');
-        $payment->save();
-;
+        $payment->save();;
         return redirect()->route('investor.add');
     }
 
@@ -132,7 +132,7 @@ class AdminController extends Controller
     public function updateinvestment(Request $request)
     {
         $investment = new Investment;
-        $investment->plan= $request->plan;
+        $investment->plan = $request->plan;
         $investment->amount = $request->amount;
         $investment->profit = $request->profit;
         $investment->duration = $request->duration;
@@ -154,5 +154,27 @@ class AdminController extends Controller
         // Redirect the user back to the payments list page.
         // return view('Admin.addcoin');
         return redirect()->back()->with('success', 'Investment details deleted successfully.');
+    }
+
+    public function history()
+    {
+
+
+        // $payment = Payment::all();
+        // return view('Admin.addcoin', compact('payment'));
+        // $withdrawal = Withdrawal::all();
+        $withdrawal = Withdrawal::with('user')->get();
+        return view('Admin.history', compact('withdrawal'));
+    }
+
+
+    public function updatestatus(Request $request, $id)
+    {
+        $withdrawal = Withdrawal::find($id);
+        $withdrawal->status = $request->input('status');
+        $withdrawal->save();
+
+        // return redirect()->back();
+        return redirect()->route('admin.payment');
     }
 }

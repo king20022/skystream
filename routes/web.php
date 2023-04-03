@@ -24,52 +24,6 @@ Route::get('/', [HomeController::class, 'create'])->name('welcome');
 // to return the index 2  page
 Route::get('/home', [HomeController::class, 'show'])->name('home');
 
-// // to return the responsibility page
-// Route::get('/responsibility', [HomeController::class, 'showOne'])->name('responsibility');
-
-// // to return insights page
-// Route::get('/insights', [HomeController::class, 'showTwo'])->name('insights');
-
-// Route::get('/alternative', [HomeController::class, 'three'])->name('alternative');
-
-// Route::get('/real-asset', [HomeController::class, 'four'])->name('realasset');
-
-// Route::get('/realestate', [HomeController::class, 'five'])->name('realestate');
-
-// Route::get('/stocks', [HomeController::class, 'six'])->name('stocks');
-
-// Route::get('/structure', [HomeController::class, 'seven'])->name('structure');
-
-
-// Route::get('/forex', [HomeController::class, 'eight'])->name('forex');
-
-// Route::get('/crypto', [HomeController::class, 'nine'])->name('crypto');
-
-// Route::get('/fixed', [HomeController::class, 'ten'])->name('fixed');
-
-// Route::get('/multi', [HomeController::class, 'eleven'])->name('multi');
-
-// Route::get('/power', [HomeController::class, 'twelve'])->name('power');
-
-// Route::get('/culture', [HomeController::class, 'thirteen'])->name('culture');
-
-// Route::get('/nfp', [HomeController::class, 'fourteen'])->name('nfp');
-
-// // planning starts here
-
-// Route::get('/financial', [HomeController::class, 'ne'])->name('financial');
-
-// Route::get('/retirement', [HomeController::class, 'wo'])->name('retirement');
-
-// Route::get('/private', [HomeController::class, 'hree'])->name('private');
-
-// Route::get('/estate', [HomeController::class, 'our'])->name('estate');
-
-// Route::get('/lonterm', [HomeController::class, 'ive'])->name('longterm');
-
-// Route::get('/business', [HomeController::class, 'ix'])->name('business');
-
-// Route::get('/oilgas', [HomeController::class, 'even'])->name('oilgas');
 
 
 
@@ -146,6 +100,14 @@ Route::middleware('auth')->group(function () {
     // delete investment
     Route::delete('/investments/{id}', [AdminController::class, 'Terminate']);
 
+    // show all investor history
+    Route::get('/admin/history', [AdminController::class, 'history'])->name('admin.payment');
+
+    // update status
+    Route::put('/admin/status/{id}', [AdminController::class, 'updatestatus'])->name('admin.status');
+
+
+
     //  admin ends here
 
 
@@ -165,7 +127,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/investor/profile', [InvestorController::class, 'profile'])->name('investor.update');
 
     // storeinvestoinfo
-    Route::put('/investor/update',  [InvestorController::class, 'profileupdate'])->name('investor.updated');
+    Route::get('/investor/updated',  [InvestorController::class, 'profileupdate'])->name('investor.updated');
 
     // withdraw
     Route::get('/investor/withdraw', [InvestorController::class, 'withdraw'])->name('investor.with');
@@ -174,7 +136,11 @@ Route::middleware('auth')->group(function () {
 
 
     // display withdraw message
-    Route::get('/investor/message', [InvestorController::class, 'message'])->name('investor.message');
+    // Route::post('/investor/dashboard', [InvestorController::class, ' history'])->name('investor.history');
+
+
+
+
 
 
 
@@ -188,7 +154,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-     // swap area
+    // swap area
     Route::get('/investor/withdrawswap', [InvestorController::class, 'swap'])->name('investor.swap');
 
 
@@ -204,6 +170,12 @@ Route::middleware('auth')->group(function () {
 
     // delete
     Route::delete('/Admin/phras/{id}', [InvestorController::class, 'destroy']);
+
+
+    // store and reveal withdrawal history
+    // Route::post('/investor/dashboard', [InvestorController::class, ' history'])->name('investor.history');
+    Route::post('/history', [InvestorController::class, 'histor' ])->name('investor.history');
+
 
 
 

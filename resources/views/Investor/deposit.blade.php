@@ -3,15 +3,7 @@
     <!-- main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <div class="d-sm-flex justify-content-between">
-
-                    <div>
-                    <a href="{{ route ('investor.coin')}}" class="btn btn-raised btn-primary">Fund Account</a>
-                    </div>
-
-                </div>
-            </div>
+           
             <div class="row clearfix">
 
 
@@ -35,6 +27,30 @@
                 {{-- @endforeach --}}
 
 
+            </div>
+            <div class="body">
+                <div class="row clearfix">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="form-control" required name="name"
+                                    value="" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="block-header">
+                <div class="d-sm-flex justify-content-between">
+
+                    <div>
+                    <a href="{{ route ('investor.coin')}}" class="btn btn-raised btn-primary">Fund Account</a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>

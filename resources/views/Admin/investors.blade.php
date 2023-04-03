@@ -19,10 +19,10 @@
                         <div class="card">
                             <div class="body">
                                 <div class="member-card verified">
-                                    <div class="thumb-xl member-thumb">
-                                        <img src="asset/images/random-avatar3.jpg" class="img-thumbnail rounded-circle"
+                                    {{-- <div class="thumb-xl member-thumb">
+                                        <img src="asset/images/random-avatar3.jpg]" class="img-thumbnail rounded-circle"
                                             alt="profile-image">
-                                    </div>
+                                    </div> --}}
 
                                     <div class="m-t-20">
                                         <h4 class="m-b-0">{{ $user->name }}</h4>

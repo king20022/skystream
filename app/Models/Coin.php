@@ -15,7 +15,7 @@ class Coin extends Model
     protected $table = 'coins';
     protected $primaryKey = 'id';
     protected $guarded = [];
-    
+
 
 
     /**
@@ -23,7 +23,7 @@ class Coin extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user(): BelongsTo
+    public function users(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }

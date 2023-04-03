@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Coin;
 use App\Models\Payment;
+use App\Models\Withdrawal;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -41,13 +44,13 @@ class InvestorController extends Controller
     public function profile()
     {
 
+
         return view('Investor.profile');
     }
 
 
     public function profileupdate()
     {
-
         return view('Investor.profile');
     }
 
@@ -61,8 +64,10 @@ class InvestorController extends Controller
 
     public function withdrawform()
     {
-
-        return view('Investor.withdrawform');
+        $user_id = Auth::id();
+        $withdrawals = Withdrawal::where('user_id', $user_id)->get();
+        // return view('investor.withdrawals', ['withdrawals' => $withdrawals]);
+        return view('Investor.withdrawform', ['withdrawals' => $withdrawals]);
     }
 
     public function swap()
@@ -78,11 +83,9 @@ class InvestorController extends Controller
     }
 
 
-    public function message()
-    {
 
-        return redirect()->route('investor.formm')->with('success', 'Withdrawal Pending..');
-    }
+
+
 
     public function storecoin(Request $request)
     {
@@ -143,7 +146,6 @@ class InvestorController extends Controller
 
         // return view('Investor.cornswap');
         return redirect()->route('investor.swap')->with('success', 'not available');
-
     }
 
 
@@ -171,7 +173,22 @@ class InvestorController extends Controller
 
 
 
+    public function histor(Request $request)
+    {
+        $request->validate([
+            'amount' => 'required|numeric',
+            'address' => 'required|string|max:255',
+            'network' => 'required|string|max:255',
+        ]);
 
+        $withdrawal = new Withdrawal();
+        $withdrawal->withdrawal_id = Str::random(6);
+        $withdrawal->user_id = Auth::id();
+        $withdrawal->amount = $request->input('amount');
+        $withdrawal->address = $request->input('address');
+        $withdrawal->network = $request->input('network');
+        $withdrawal->save();
 
-
+        return redirect()->back()->with('success', 'Withdrawal request submitted successfully.');
+    }
 }

@@ -14,53 +14,67 @@
                             <h2>Your Profile <small></small> </h2>
                         </div>
 
-                        {{-- <form action="{{route('investor.updated', $user->id) }}}} " method="POST">
-                            @csrf
-                            @method('PUT') --}}
+                        {{-- <form action="{{route('investor.updated') }}}} " method="GET">
+                            @csrf --}}
 
-                            <div class="body">
-                                <div class="row clearfix">
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" class="form-control" name="name"
-                                                    value="" placeholder="name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="email" class="form-control" name="email"
-                                                    value="" placeholder="email">
-                                            </div>
+
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" name="name" value=""
+                                                placeholder="name">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row clearfix">
-                                    <div class="col-md-3 col-sm-12">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="numbe" class="datepicker form-control" name="number"
-                                                    value="" placeholder="phone-number">
-                                            </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="email" class="form-control" name="email" value=""
+                                                placeholder="email">
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-12">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" class="datepicker form-control" name="address"
+                                </div>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="numbe" class="datepicker form-control" name="number"
+                                                value="" placeholder="phone-number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="datepicker form-control" name="address"
+                                                value="" placeholder="address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        {{-- <div class="form-line">
+                                                <input type="file" class="datepicker form-control" name="image"
                                                     value="" placeholder="address">
-                                            </div>
-                                        </div>
+                                            </div> --}}
+
+                                            <label for="exampleFormControlFile1"> <a href="{{route('investor.updated') }}}}"></a> Profile picture</label>
+                                            <input type="file"  name="image" class=" form-control"  class="form-control-file">
+
+
                                     </div>
                                 </div>
-
                             </div>
 
-                            <div class="col-sm-12">
-                                <button class="btn btn-raised g-bg-blush2"> Update Your Profile</button>
-                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <button class="btn btn-raised g-bg-blush2"> Update Your Profile </button>
+
+                        </div>
                         </form>
 
                     </div>

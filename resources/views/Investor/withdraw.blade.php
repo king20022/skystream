@@ -37,46 +37,48 @@
 
 
             </div>
-            <div class="header">
-                <h5> Your withdrawal Details <small></small> </h5>
-            </div>
-            <div class="body">
+
+
+
+
+            {{-- <div class="body">
                 <div class="row clearfix">
 
-                    <div class="col-md-6 col-sm-12">
+
+                    <div class="col-md-3 col-sm-12">
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" required name="name"
-                                    value="" placeholder="name">
+                                <input type="text" class="form-control" required name="Network"
+                                    value="" placeholder="network">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="form-group">
-                            <div class="form-line">
-                                <input type="text" class="datepicker form-control" required name="Network"
-                                    value="" placeholder="Network">
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-3 col-sm-12">
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="text" class="datepicker form-control" required name="address"
-                                    value="" placeholder="address">
+                                    value="" placeholder="Address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="datepicker form-control" required name="amount"
+                                    value="" placeholder="Amount">
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
         </div>
         <div class="block-header">
             <div class="d-sm-flex justify-content-between">
 
-                <div>
+                <div class=" pl-3" >
                 <a href="{{ route ('investor.formm')}}" class="btn btn-raised btn-primary">Proceed</a>
                 </div>
 
