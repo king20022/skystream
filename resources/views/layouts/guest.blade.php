@@ -287,11 +287,10 @@
                                     <span>support@Skystreamexchange.com</span>
                                 </div>
                                 <div>
-                                    <span>0000 --- --- --</span>
+                                    <span>+1 276 409 0156</span>
                                 </div>
                                 <div>
-                                    <span><i class="fas fa-map-marker-alt uk-margin-small-right"></i> Wellington, New
-                                        Zealand</span>
+                                    <span><i class="fas fa-map-marker-alt uk-margin-small-right"></i> USA Florida</span>
                                 </div>
 
 
