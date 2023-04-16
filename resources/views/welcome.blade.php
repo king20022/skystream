@@ -278,7 +278,7 @@
                                     <!-- Buy Pricing Table #1 Starts -->
                                     <li data-type="buy" class="is-visible">
                                         <header class="pricing-header">
-                                            <h2>{{ $investment->plan }} Plan</h2>
+                                            <h2>{{ $investment->plan }} </h2>
 
                                             <div class="price">
 

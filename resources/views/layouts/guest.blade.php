@@ -279,6 +279,9 @@
                             </div>
                         </div>
                         <!-- Footer Widget Ends -->
+                        {{-- DB_DATABASE=skysicah_broker
+                        DB_USERNAME=skysicah_skysicah
+                        DB_PASSWORD=brokersharp --}}
                         <!-- Footer Widget Starts -->
                         <div class="col-sm-4 col-md-3">
                             <h4>Contact Us </h4>
